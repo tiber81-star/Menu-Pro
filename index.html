@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuPro - Créé par un Chef pour les Chefs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('capture1.png'); background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 3rem; margin: 0 0 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .cta-btn { background: #27ae60; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.2rem; transition: all 0.3s; box-shadow: 0 5px 15px rgba(39,174,96,0.4); display: inline-block; }
+        .cta-btn:hover { background: #219a52; transform: translateY(-3px); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #2c3e50; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .feature-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center; }
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; }
+        .mockup { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+        .mockup img { width: 100%; display: block; }
+        .pricing-section { background: #ecf0f1; padding: 60px 20px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto; }
+        .pricing-card { background: white; border-radius: 15px; padding: 40px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .pricing-card.pro { border: 4px solid #e67e22; position: relative; }
+        .badge { background: #e67e22; color: white; padding: 5px 15px; border-radius: 20px; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-size: 0.8rem; font-weight: bold; }
+        .price { font-size: 3rem; font-weight: 700; margin: 20px 0; color: #2c3e50; }
+        .price small { font-size: 1rem; font-weight: 400; color: #777; }
+        .features-list { text-align: left; list-style: none; padding: 0; margin-bottom: 30px; }
+        .features-list li { margin-bottom: 10px; }
+        .features-list li::before { content: "✔️ "; color: #27ae60; }
+        .features-list li.disabled::before { content: "❌ "; color: #e74c3c; }
+        .features-list li.disabled { color: #999; }
+        .faq { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .faq-item h3 { margin-top: 0; color: #2c3e50; }
+        .lang-nav { text-align: right; padding: 10px 20px; background: #2c3e50; }
+        .lang-btn { color: white; text-decoration: none; margin-left: 15px; font-weight: bold; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 30px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="lang-nav">
+        <a href="index.html" class="lang-btn" style="color:#1abc9c;">FR</a>
+        <a href="index-en.html" class="lang-btn">EN</a>
+        <a href="index-es.html" class="lang-btn">ES</a>
+    </div>
+    <div class="hero">
+        <h1>🍽️ MenuPro</h1>
+        <p>Cessez de perdre des heures à écrire vos menus. Générez une semaine complète de plats en 30 secondes chrono.</p>
+        <a href="/MenuPro.html" target="_blank" class="cta-btn">🚀 Utiliser MenuPro en ligne</a>
+        <br><small style="opacity: 0.8;">Aucune carte bancaire requise - Version gratuite illimitée (sans impression) - <a href="/MenuPro.html" download style="color: #fff; text-decoration: underline;">Télécharger pour PC</a></small>
+    </div>
+    <div class="container">
+        <h2 class="section-title">Pourquoi les restaurateurs adorent MenuPro ?</h2>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">⚡</div><h3>Génération Instantanée</h3><p>Cliquez sur "Générer" et piochez parmi des centaines de plats.</p></div>
+            <div class="feature-card"><div class="feature-icon">🔗</div><h3>Recettes Cliquables</h3><p>Chaque plat est un lien direct vers sa recette sur Google.</p></div>
+            <div class="feature-card"><div class="feature-icon">🌍</div><h3>Multilingue</h3><p>Interface disponible en Français, Anglais et Espagnol.</p></div>
+            <div class="feature-card"><div class="feature-icon">💾</div><h3>100% Local</h3><p>Vos données sont sauvegardées sur votre ordinateur.</p></div>
+        </div>
+    </div>
+    <div class="container" style="background: white; border-radius: 20px; text-align: center;">
+        <h2 class="section-title">Testez MenuPro gratuitement !</h2>
+        <div class="mockup" style="max-width: 800px; margin: 0 auto 30px auto;"><img src="capture1.png" alt="MenuPro"></div>
+        <a href="/MenuPro.html" target="_blank" class="cta-btn">📥 Ouvrir l'application</a>
+    </div>
+    <div class="pricing-section">
+        <h2 class="section-title">Choisissez votre formule</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>🆓 Gratuite</h3><div class="price">0€</div>
+                <ul class="features-list"><li>Illimitée (pas d'expiration)</li><li>Semaine 1 uniquement</li><li>Générateur de plats</li><li class="disabled">Impression interdite</li></ul>
+                <a href="/MenuPro.html" target="_blank" style="background: #95a5a6; color: white; padding: 15px; border-radius: 5px; text-decoration: none; display: block;">Utiliser en ligne</a>
+            </div>
+            <div class="pricing-card pro">
+                <div class="badge">POPULAIRE</div><h3>🔥 Licence Complète</h3><div class="price">79€ <small>unique</small></div>
+                <ul class="features-list"><li>Impression A4/A5/A3</li><li>Exportation</li><li>5 semaines</li><li>Licence à vie</li></ul>
+                <a href="https://buy.stripe.com/test_fZufZi4Su40q5IE11V3Je00" target="_blank" style="background: #e67e22; color: white; padding: 15px; border-radius: 5px; text-decoration: none; display: block;">Acheter maintenant (TEST)</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="section-title">Questions Fréquentes</h2>
+        <div class="faq">
+            <div class="faq-item"><h3>Pourquoi je ne peux pas imprimer dans la version gratuite ?</h3><p>Parce que le menu imprimé est le document de travail central de votre cuisine. La licence à 79€ débloque définitivement l'impression.</p></div>
+            <div class="faq-item"><h3>Puis-je ajouter mes propres recettes ?</h3><p>Oui ! Grâce à la fonction "Gérer les plats", vous pouvez copier-coller votre propre carte.</p></div>
+            <div class="faq-item"><h3>Le logiciel fonctionne-t-il sans internet ?</h3><p>Oui ! Une fois téléchargé, MenuPro est 100% local.</p></div>
+        </div>
+    </div>
+    <div class="hero" style="background: linear-gradient(rgba(44,62,80,0.9), rgba(44,62,80,0.9)), url('capture1.png');">
+        <h2>Prêt à moderniser votre cuisine ?</h2>
+        <p style="margin-bottom: 30px;">Testez MenuPro gratuitement et découvrez le confort de la génération automatique.</p>
+        <a href="/MenuPro.html" target="_blank" class="cta-btn">🚀 Utiliser MenuPro en ligne</a>
+    </div>
+    <footer><p>© 2026 MenuPro - Créé par un chef pour les chefs.</p></footer>
+</body>
+</html>
