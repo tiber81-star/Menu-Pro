@@ -31,13 +31,13 @@ export async function onRequestPost(context) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'MenuPro <onboarding@resend.dev>',
+        from: 'MenuPro <licences@menupro2.com>',
         to: customerEmail,
         subject: '🎉 Votre licence MenuPro est prête !',
         html: `<p>Merci pour votre achat !</p>
                <p>Voici votre clé de licence :</p>
                <h1 style="background:#f0f0f0;padding:10px;font-family:monospace;">${licenseKey}</h1>
-               <p>Cliquez ici pour télécharger le logiciel : <a href="https://menu-pro1.pages.dev/MenuPro.html">Télécharger MenuPro</a></p>
+               <p>Cliquez ici pour télécharger le logiciel : <a href="https://menupro2.com/MenuPro.html">Télécharger MenuPro</a></p>
                <p>Ouvrez le fichier, collez la clé dans la fenêtre de licence, et profitez-en !</p>`
       })
     });
