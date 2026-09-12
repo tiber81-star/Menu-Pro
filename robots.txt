@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Ne pas indexer les fichiers de travail
+Disallow: /MenuPro.html
+
+# Sitemap
+Sitemap: https://menupro2.com/sitemap.xml
