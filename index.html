@@ -14,6 +14,8 @@
     <meta name="revisit-after" content="7 days">
     <meta name="rating" content="general">
     
+    <link rel="icon" type="image/png" href="logo.png">
+    
     <meta name="geo.region" content="FR">
     <meta name="geo.placename" content="France">
     
@@ -88,7 +90,8 @@
         .lang-btn:hover { color: #1abc9c; }
         .lang-btn.active { color: #1abc9c; }
         .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('capture2-menu-semaine-pictogrammes.png'); background-size: cover; background-position: center; color: white; padding: 90px 20px 70px; text-align: center; }
-        .hero h1 { font-size: 2.8rem; margin: 0 0 20px; font-weight: 800; line-height: 1.2; }
+        .hero h1 { font-size: 2.6rem; margin: 0 0 20px; font-weight: 800; line-height: 1.2; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+        .hero h1 img { width: 60px; height: 60px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
         .hero .subtitle { font-size: 1.25rem; margin-bottom: 20px; max-width: 780px; margin-left: auto; margin-right: auto; opacity: 0.95; }
         .hero .badge-hero { display: inline-block; background: rgba(230,126,34,0.9); padding: 6px 18px; border-radius: 30px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; }
         .cta-btn { background: #27ae60; color: white; padding: 18px 44px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.15rem; transition: all 0.3s; box-shadow: 0 6px 20px rgba(39,174,96,0.4); display: inline-block; border: none; cursor: pointer; }
@@ -167,7 +170,8 @@
         footer p { margin: 6px 0; }
         footer .small { font-size: 0.8rem; opacity: 0.7; }
         @media (max-width: 720px) {
-            .hero h1 { font-size: 2rem; }
+            .hero h1 { font-size: 1.7rem; }
+            .hero h1 img { width: 44px; height: 44px; }
             .hero .subtitle { font-size: 1.05rem; }
             .section-title { font-size: 1.7rem; }
             .two-col, .compare-grid { grid-template-columns: 1fr; }
@@ -185,8 +189,8 @@
     
     <header class="hero">
         <span class="badge-hero">⚡ Conçu par un chef, pour les cuisiniers</span>
-        <h1>Créez vos menus de restaurant en 30 secondes</h1>
-        <p class="subtitle">4 plats du jour, livraison le lundi, commande le vendredi. MenuPro génère 15 jours de menus d'un coup — avec pictogrammes porc, poulet, poisson.</p>
+        <h1><img src="logo.png" alt="Logo MenuPro"> MenuPro</h1>
+        <p class="subtitle">Créez vos menus de restaurant en 30 secondes. 4 plats du jour, livraison le lundi, commande le vendredi : MenuPro génère 15 jours de menus d'un coup — avec pictogrammes porc, poulet, poisson.</p>
         <a href="/MenuPro.html" target="_blank" class="cta-btn">🚀 Essayer gratuitement</a>
         <br><small>Sans carte bancaire · Version gratuite illimitée · <a href="/MenuPro.html" download>Télécharger pour PC</a></small>
     </header>
