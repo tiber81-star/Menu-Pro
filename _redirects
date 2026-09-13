@@ -1,0 +1,5 @@
+# _redirects (Netlify, Vercel, Cloudflare Pages)
+/index.html              /                 301
+/index-en.html           /index-en         301
+/index-es.html           /index-es         301
+/MenuPro.html            /MenuPro.html     200
