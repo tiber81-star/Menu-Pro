@@ -1,423 +1,457 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Creador de Menús para Restaurantes | Genera 15 Días de Menús en 30 Segundos - MenuPro</title>
-    <meta name="description" content="MenuPro es el creador de menús diseñado por un chef que debía planificar 15 días por adelantado a causa de las entregas semanales. 4 platos del día, pictogramas cerdo, pollo, pescado. Versión gratuita. Licencia 79 €.">
-    <meta name="keywords" content="creador de menús, generador de menús para restaurantes, creador de cartas, planificador de menús semanales, software de menús para restaurantes, herramienta de creación de menús, app para planificar menús de restaurante, pictogramas alérgenos">
-    <meta name="author" content="Sébastien Berthy">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="language" content="Spanish">
-    <meta name="revisit-after" content="7 days">
-    <meta name="rating" content="general">
-    
-    <link rel="icon" type="image/png" href="logo.png">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://menupro2.com/index-es">
-    <meta property="og:title" content="MenuPro - El Creador de Menús para Restaurantes">
-    <meta property="og:description" content="Diseñado por un chef que debía planificar 15 días por adelantado. Genera 15 días de menús en 30 segundos. Versión gratuita.">
-    <meta property="og:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:locale:alternate" content="es_MX">
-    <meta property="og:locale:alternate" content="es_AR">
-    <meta property="og:site_name" content="MenuPro">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MenuPro - El Creador de Menús para Restaurantes">
-    <meta name="twitter:description" content="Genera 15 días de menús en 30 segundos. Diseñado por un chef.">
-    <meta name="twitter:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
-    
-    <link rel="canonical" href="https://menupro2.com/index-es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MenuPro — Escribe tus menús con un clic. No en una tarde.</title>
+<meta name="description" content="MenuPro hace una sola cosa, perfectamente: generar tus menús de restaurante al instante. Receta con un clic, 6 pictogramas, impresión A4/A5/A3. Sin cuenta, 100% local. Licencia 79 €.">
+<meta name="keywords" content="creador de menús, generador de menús para restaurantes, creador de cartas, planificador de menús semanales, software de menús, app para planificar menús, pictogramas alérgenos">
+<meta name="author" content="Sébastien Berthy">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="language" content="Spanish">
+<meta name="rating" content="general">
+<link rel="icon" type="image/webp" id="favicon-link">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://menupro2.com/index-es">
+<meta property="og:title" content="MenuPro — Escribe tus menús con un clic">
+<meta property="og:description" content="Un clic. Un menú. No una tarde. Receta con un clic, 6 pictogramas, impresión A4/A5/A3, 100% local, sin cuenta.">
+<meta property="og:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="es_AR">
+<meta property="og:site_name" content="MenuPro">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MenuPro — Escribe tus menús con un clic">
+<meta name="twitter:description" content="Un clic. Un menú. No una tarde.">
+<meta name="twitter:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
+<link rel="canonical" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="fr" href="https://menupro2.com/">
+<link rel="alternate" hreflang="fr-FR" href="https://menupro2.com/">
+<link rel="alternate" hreflang="en" href="https://menupro2.com/index-en">
+<link rel="alternate" hreflang="en-US" href="https://menupro2.com/index-en">
+<link rel="alternate" hreflang="en-GB" href="https://menupro2.com/index-en">
+<link rel="alternate" hreflang="en-CA" href="https://menupro2.com/index-en">
+<link rel="alternate" hreflang="en-AU" href="https://menupro2.com/index-en">
+<link rel="alternate" hreflang="es" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="es-ES" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="es-MX" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="es-AR" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="es-CO" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="es-CL" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="es-PE" href="https://menupro2.com/index-es">
+<link rel="alternate" hreflang="x-default" href="https://menupro2.com/index-en">
 
-    <!-- ============================================================ -->
-    <!-- HREFLANG INTERNATIONAL — FR / EN / ES                        -->
-    <!-- ============================================================ -->
-    <!-- Français -->
-    <link rel="alternate" hreflang="fr" href="https://menupro2.com/">
-    <link rel="alternate" hreflang="fr-FR" href="https://menupro2.com/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, Windows, macOS","description":"MenuPro es un creador de menús diseñado por un chef. Generación instantánea, receta con un clic, 6 pictogramas, impresión A4/A5/A3, 100% local.","url":"https://menupro2.com/index-es","image":"https://menupro2.com/capture2-menu-semaine-pictogrammes.png","author":{"@type":"Person","name":"Sébastien Berthy","jobTitle":"Cocinero"},"offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"MenuPro","description":"Generador de menús de restaurante con un clic.","offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"},"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Sébastien Berthy"},"reviewBody":"MenuPro me ahorra horas cada semana. Un clic, un menú, listo."}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Por qué MenuPro es más simple que los demás programas?","acceptedAnswer":{"@type":"Answer","text":"Porque solo hace una cosa: generar tus menús. Sin gestión de stock, sin contabilidad, sin planificación de personal."}},{"@type":"Question","name":"¿Hay que crear una cuenta o estar conectado a internet?","acceptedAnswer":{"@type":"Answer","text":"No. MenuPro funciona 100% en local. Sin cuenta, sin contraseña, sin conexión a internet."}},{"@type":"Question","name":"¿Qué significan los pictogramas?","acceptedAnswer":{"@type":"Answer","text":"MenuPro asocia a cada plato un pictograma: cerdo, pollo, pescado, ternera, verdura, postre."}},{"@type":"Question","name":"¿Por qué no puedo imprimir con la versión gratuita?","acceptedAnswer":{"@type":"Answer","text":"El menú impreso es el documento central de tu cocina. La licencia de 79 € desbloquea la impresión y la exportación."}}]}
+</script>
 
-    <!-- Anglais (USA + UK + Canada + Australie) -->
-    <link rel="alternate" hreflang="en" href="https://menupro2.com/index-en">
-    <link rel="alternate" hreflang="en-US" href="https://menupro2.com/index-en">
-    <link rel="alternate" hreflang="en-GB" href="https://menupro2.com/index-en">
-    <link rel="alternate" hreflang="en-CA" href="https://menupro2.com/index-en">
-    <link rel="alternate" hreflang="en-AU" href="https://menupro2.com/index-en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Espagnol (Espagne + Amérique du Sud) -->
-    <link rel="alternate" hreflang="es" href="https://menupro2.com/index-es">
-    <link rel="alternate" hreflang="es-ES" href="https://menupro2.com/index-es">
-    <link rel="alternate" hreflang="es-MX" href="https://menupro2.com/index-es">
-    <link rel="alternate" hreflang="es-AR" href="https://menupro2.com/index-es">
-    <link rel="alternate" hreflang="es-CO" href="https://menupro2.com/index-es">
-    <link rel="alternate" hreflang="es-CL" href="https://menupro2.com/index-es">
-    <link rel="alternate" hreflang="es-PE" href="https://menupro2.com/index-es">
-
-    <!-- Version par défaut (marché international) -->
-    <link rel="alternate" hreflang="x-default" href="https://menupro2.com/index-en">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "MenuPro",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web, Windows, macOS",
-      "description": "MenuPro es un creador de menús diseñado por un chef que debía planificar 15 días por adelantado. Genera 15 días de menús en 30 segundos, con pictogramas cerdo, pollo y pescado.",
-      "url": "https://menupro2.com/index-es",
-      "image": "https://menupro2.com/capture2-menu-semaine-pictogrammes.png",
-      "author": {
-        "@type": "Person",
-        "name": "Sébastien Berthy",
-        "jobTitle": "Cocinero"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "79.00",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "url": "https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00"
-      }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question","name": "¿Por qué no puedo imprimir con la versión gratuita?","acceptedAnswer": {"@type": "Answer","text": "Porque el menú impreso es el documento de trabajo central de tu cocina. La licencia de 79 € desbloquea la impresión y la exportación de forma permanente."}},
-        {"@type": "Question","name": "¿Puedo añadir mis propias recetas?","acceptedAnswer": {"@type": "Answer","text": "¡Sí! Con la función Gestionar platos, puedes copiar y pegar tu propio menú y tus platos estrella en segundos."}},
-        {"@type": "Question","name": "¿Funciona el software sin internet?","acceptedAnswer": {"@type": "Answer","text": "¡Sí! Una vez descargado, MenuPro es 100% local. No se necesita conexión para usarlo a diario."}},
-        {"@type": "Question","name": "¿Puedo usarlo para un comedor escolar o una residencia?","acceptedAnswer": {"@type": "Answer","text": "Por supuesto. Los menús son imprimibles y se pueden mostrar, y los pictogramas cerdo / pollo / pescado permiten identificar cada plato al instante."}}
-      ]
-    }
-    </script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        * { box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
-        .lang-nav { text-align: right; padding: 12px 24px; background: #2c3e50; }
-        .lang-btn { color: white; text-decoration: none; margin-left: 18px; font-weight: 600; font-size: 0.95rem; }
-        .lang-btn:hover { color: #1abc9c; }
-        .lang-btn.active { color: #1abc9c; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('capture2-menu-semaine-pictogrammes.png'); background-size: cover; background-position: center; color: white; padding: 90px 20px 70px; text-align: center; }
-        .hero h1 { font-size: 2.6rem; margin: 0 0 20px; font-weight: 800; line-height: 1.2; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
-        .hero h1 img { width: 60px; height: 60px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
-        .hero .subtitle { font-size: 1.25rem; margin-bottom: 20px; max-width: 780px; margin-left: auto; margin-right: auto; opacity: 0.95; }
-        .hero .badge-hero { display: inline-block; background: rgba(230,126,34,0.9); padding: 6px 18px; border-radius: 30px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; }
-        .cta-btn { background: #27ae60; color: white; padding: 18px 44px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.15rem; transition: all 0.3s; box-shadow: 0 6px 20px rgba(39,174,96,0.4); display: inline-block; border: none; cursor: pointer; }
-        .cta-btn:hover { background: #219a52; transform: translateY(-3px); box-shadow: 0 10px 25px rgba(39,174,96,0.5); }
-        .cta-btn.secondary { background: transparent; border: 2px solid white; box-shadow: none; }
-        .cta-btn.secondary:hover { background: white; color: #2c3e50; }
-        .hero small { display: block; margin-top: 18px; opacity: 0.85; font-size: 0.9rem; }
-        .hero small a { color: #fff; text-decoration: underline; }
-        .trust-bar { background: #2c3e50; color: white; padding: 18px 20px; display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; font-size: 0.9rem; }
-        .trust-bar span { display: flex; align-items: center; gap: 8px; }
-        .container { max-width: 1140px; margin: 0 auto; padding: 70px 20px; }
-        .container.narrow { max-width: 860px; }
-        .section-title { text-align: center; font-size: 2.1rem; margin-bottom: 16px; color: #2c3e50; font-weight: 700; }
-        .section-subtitle { text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 50px; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .story { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 6px 25px rgba(0,0,0,0.07); font-size: 1.08rem; }
-        .story p { margin-bottom: 18px; }
-        .story strong { color: #e67e22; }
-        .story .quote { border-left: 4px solid #e67e22; padding: 10px 0 10px 22px; font-style: italic; color: #555; margin: 28px 0; font-size: 1.1rem; background: #fef8f2; border-radius: 0 8px 8px 0; }
-        .story .signature { text-align: right; font-weight: 600; color: #2c3e50; margin-top: 20px; }
-        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        .col-card { background: white; padding: 35px; border-radius: 16px; box-shadow: 0 6px 25px rgba(0,0,0,0.07); }
-        .col-card.problem { border-top: 5px solid #e74c3c; }
-        .col-card.solution { border-top: 5px solid #27ae60; }
-        .col-card h3 { margin-top: 0; font-size: 1.4rem; color: #2c3e50; }
-        .col-card ul { list-style: none; padding: 0; }
-        .col-card ul li { padding: 10px 0; border-bottom: 1px solid #eee; }
-        .col-card.problem ul li::before { content: "❌ "; }
-        .col-card.solution ul li::before { content: "✅ "; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 26px; }
-        .feature-card { background: white; padding: 32px 26px; border-radius: 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.06); text-align: center; transition: transform 0.25s, box-shadow 0.25s; }
-        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
-        .feature-icon { font-size: 2.6rem; margin-bottom: 16px; }
-        .feature-card h3 { color: #2c3e50; margin: 0 0 12px; font-size: 1.15rem; }
-        .feature-card p { margin: 0; color: #666; font-size: 0.97rem; }
-        .use-cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
-        .use-case { background: white; padding: 28px 22px; border-radius: 14px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.25s; }
-        .use-case:hover { transform: translateY(-4px); }
-        .use-case h3 { color: #2c3e50; margin: 0 0 10px; font-size: 1.1rem; }
-        .use-case p { margin: 0; color: #666; font-size: 0.95rem; }
-        .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; max-width: 860px; margin: 0 auto; }
-        .compare-card { padding: 32px; border-radius: 16px; }
-        .compare-card.before { background: #fdecea; border-left: 5px solid #e74c3c; }
-        .compare-card.after { background: #eafaf1; border-left: 5px solid #27ae60; }
-        .compare-card h3 { margin-top: 0; font-size: 1.25rem; }
-        .compare-card.before h3 { color: #c0392b; }
-        .compare-card.after h3 { color: #1e8449; }
-        .compare-card ul { list-style: none; padding: 0; margin: 0; }
-        .compare-card ul li { padding: 8px 0; font-size: 0.98rem; }
-        .mockup { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 35px rgba(0,0,0,0.12); border: 1px solid #e5e5e5; max-width: 900px; margin: 0 auto 20px; }
-        .mockup img { width: 100%; display: block; }
-        .caption { text-align: center; font-size: 0.95rem; color: #666; margin-bottom: 50px; }
-        .pricing-section { background: #ecf0f1; padding: 70px 20px; }
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 860px; margin: 0 auto; }
-        .pricing-card { background: white; border-radius: 18px; padding: 42px 34px; text-align: center; box-shadow: 0 8px 28px rgba(0,0,0,0.08); position: relative; transition: transform 0.25s; }
-        .pricing-card:hover { transform: translateY(-5px); }
-        .pricing-card.pro { border: 3px solid #e67e22; }
-        .badge { background: #e67e22; color: white; padding: 6px 18px; border-radius: 30px; position: absolute; top: -16px; left: 50%; transform: translateX(-50%); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; }
-        .price { font-size: 3rem; font-weight: 800; margin: 18px 0; color: #2c3e50; }
-        .price small { font-size: 1rem; font-weight: 400; color: #777; }
-        .price .old { font-size: 1.3rem; color: #999; text-decoration: line-through; font-weight: 400; margin-right: 8px; }
-        .features-list { text-align: left; list-style: none; padding: 0; margin-bottom: 28px; }
-        .features-list li { margin-bottom: 12px; font-size: 0.97rem; }
-        .features-list li::before { content: "✔️ "; color: #27ae60; }
-        .features-list li.disabled::before { content: "❌ "; color: #e74c3c; }
-        .features-list li.disabled { color: #999; }
-        .guarantee { text-align: center; margin-top: 30px; font-size: 0.95rem; color: #555; }
-        .guarantee strong { color: #27ae60; }
-        .faq { max-width: 800px; margin: 0 auto; }
-        .faq-item { background: white; padding: 24px 28px; border-radius: 12px; margin-bottom: 14px; box-shadow: 0 3px 12px rgba(0,0,0,0.05); }
-        .faq-item h3 { margin: 0 0 10px; color: #2c3e50; font-size: 1.08rem; }
-        .faq-item p { margin: 0; color: #666; font-size: 0.97rem; }
-        .final-cta { background: linear-gradient(rgba(44,62,80,0.92), rgba(44,62,80,0.92)), url('capture2-menu-semaine-pictogrammes.png'); background-size: cover; background-position: center; color: white; text-align: center; padding: 80px 20px; }
-        .final-cta h2 { font-size: 2.2rem; margin: 0 0 20px; }
-        .final-cta p { font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.95; }
-        footer { background: #2c3e50; color: white; text-align: center; padding: 32px 20px; font-size: 0.9rem; }
-        footer p { margin: 6px 0; }
-        footer .small { font-size: 0.8rem; opacity: 0.7; }
-        @media (max-width: 720px) {
-            .hero h1 { font-size: 1.7rem; }
-            .hero h1 img { width: 44px; height: 44px; }
-            .hero .subtitle { font-size: 1.05rem; }
-            .section-title { font-size: 1.7rem; }
-            .two-col, .compare-grid { grid-template-columns: 1fr; }
-            .cta-btn { padding: 16px 32px; font-size: 1.05rem; }
-            .price { font-size: 2.4rem; }
-        }
-    </style>
+<style>
+*{box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;color:#333;line-height:1.6}
+.lang-nav{text-align:right;padding:12px 24px;background:#2c3e50}
+.lang-btn{color:white;text-decoration:none;margin-left:18px;font-weight:600;font-size:.95rem}
+.lang-btn:hover,.lang-btn.active{color:#1abc9c}
+.hero{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.78)),url('capture2-menu-semaine-pictogrammes.png');background-size:cover;background-position:center;color:white;padding:90px 20px 70px;text-align:center}
+.hero h1{font-size:2.6rem;margin:0 0 20px;font-weight:800;line-height:1.2;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.hero h1 img{width:60px;height:60px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.hero .subtitle{font-size:1.2rem;margin-bottom:20px;max-width:820px;margin-left:auto;margin-right:auto;opacity:.97}
+.hero .subtitle strong{color:#ffd166}
+.hero .badge-hero{display:inline-block;background:rgba(230,126,34,.95);padding:6px 18px;border-radius:30px;font-size:.9rem;font-weight:600;margin-bottom:20px}
+.cta-btn{background:#27ae60;color:white;padding:18px 44px;text-decoration:none;border-radius:50px;font-weight:700;font-size:1.15rem;transition:all .3s;box-shadow:0 6px 20px rgba(39,174,96,.4);display:inline-block;border:none;cursor:pointer}
+.cta-btn:hover{background:#219a52;transform:translateY(-3px);box-shadow:0 10px 25px rgba(39,174,96,.5)}
+.cta-btn.secondary{background:transparent;border:2px solid white;box-shadow:none}
+.cta-btn.secondary:hover{background:white;color:#2c3e50}
+.hero small{display:block;margin-top:18px;opacity:.9;font-size:.9rem}
+.trust-bar{background:#2c3e50;color:white;padding:18px 20px;display:flex;justify-content:center;flex-wrap:wrap;gap:30px;font-size:.9rem}
+.trust-bar span{display:flex;align-items:center;gap:8px}
+.container{max-width:1140px;margin:0 auto;padding:70px 20px}
+.container.narrow{max-width:860px}
+.section-title{text-align:center;font-size:2.1rem;margin-bottom:16px;color:#2c3e50;font-weight:700}
+.section-subtitle{text-align:center;font-size:1.1rem;color:#666;margin-bottom:50px;max-width:700px;margin-left:auto;margin-right:auto}
+.story{background:white;padding:40px;border-radius:16px;box-shadow:0 6px 25px rgba(0,0,0,.07);font-size:1.08rem}
+.story p{margin-bottom:18px}
+.story strong{color:#e67e22}
+.story h3{border-left:4px solid #e67e22;padding-left:14px;font-size:1.15rem;margin-top:28px!important;margin-bottom:12px;color:#2c3e50}
+.story .quote{border-left:4px solid #e67e22;padding:10px 0 10px 22px;font-style:italic;color:#555;margin:28px 0;font-size:1.1rem;background:#fef8f2;border-radius:0 8px 8px 0}
+.story .signature{text-align:right;font-weight:600;color:#2c3e50;margin-top:20px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.col-card{background:white;padding:35px;border-radius:16px;box-shadow:0 6px 25px rgba(0,0,0,.07)}
+.col-card.problem{border-top:5px solid #e74c3c}
+.col-card.solution{border-top:5px solid #27ae60}
+.col-card h3{margin-top:0;font-size:1.4rem;color:#2c3e50}
+.col-card ul{list-style:none;padding:0}
+.col-card ul li{padding:10px 0;border-bottom:1px solid #eee}
+.col-card.problem ul li::before{content:"❌ "}
+.col-card.solution ul li::before{content:"✅ "}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.feature-card{background:white;padding:32px 26px;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.06);text-align:center;transition:transform .25s}
+.feature-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,.1)}
+.feature-icon{font-size:2.6rem;margin-bottom:16px}
+.feature-card h3{color:#2c3e50;margin:0 0 12px;font-size:1.15rem}
+.feature-card p{margin:0;color:#666;font-size:.97rem}
+.use-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.use-case{background:white;padding:28px 22px;border-radius:14px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+.use-case h3{color:#2c3e50;margin:0 0 10px;font-size:1.1rem}
+.use-case p{margin:0;color:#666;font-size:.95rem}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:860px;margin:0 auto}
+.compare-card{padding:32px;border-radius:16px}
+.compare-card.before{background:#fdecea;border-left:5px solid #e74c3c}
+.compare-card.after{background:#eafaf1;border-left:5px solid #27ae60}
+.compare-card h3{margin-top:0;font-size:1.25rem}
+.compare-card.before h3{color:#c0392b}
+.compare-card.after h3{color:#1e8449}
+.compare-card ul{list-style:none;padding:0;margin:0}
+.compare-card ul li{padding:8px 0;font-size:.98rem}
+.mockup{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.12);border:1px solid #e5e5e5;max-width:900px;margin:0 auto 20px}
+.mockup img{width:100%;display:block}
+.caption{text-align:center;font-size:.95rem;color:#666;margin-bottom:50px}
+.picto-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:18px;max-width:800px;margin:0 auto}
+.picto-box{background:white;padding:22px;border-radius:14px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.06)}
+.picto-emoji{font-size:2.6rem;line-height:1}
+.picto-label{font-weight:600;margin-top:8px;color:#2c3e50}
+.step-box{background:white;padding:30px 24px;border-radius:16px;box-shadow:0 4px 15px rgba(0,0,0,.06);text-align:center}
+.step-num{font-size:2.2rem;font-weight:800;color:#e67e22}
+.step-box h3{color:#2c3e50;margin:10px 0}
+.step-box p{color:#666;margin:0}
+.pricing-section{background:#ecf0f1;padding:70px 20px}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;max-width:860px;margin:0 auto}
+.pricing-card{background:white;border-radius:18px;padding:42px 34px;text-align:center;box-shadow:0 8px 28px rgba(0,0,0,.08);position:relative}
+.pricing-card.pro{border:3px solid #e67e22}
+.badge{background:#e67e22;color:white;padding:6px 18px;border-radius:30px;position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:.8rem;font-weight:700}
+.price{font-size:3rem;font-weight:800;margin:18px 0;color:#2c3e50}
+.price small{font-size:1rem;font-weight:400;color:#777}
+.price .old{font-size:1.3rem;color:#999;text-decoration:line-through;font-weight:400;margin-right:8px}
+.features-list{text-align:left;list-style:none;padding:0;margin-bottom:28px}
+.features-list li{margin-bottom:12px;font-size:.97rem}
+.features-list li::before{content:"✔️ ";color:#27ae60}
+.features-list li.disabled::before{content:"❌ ";color:#e74c3c}
+.features-list li.disabled{color:#999}
+.guarantee{text-align:center;margin-top:30px;font-size:.95rem;color:#555}
+.guarantee strong{color:#27ae60}
+.faq{max-width:800px;margin:0 auto}
+.faq-item{background:white;padding:24px 28px;border-radius:12px;margin-bottom:14px;box-shadow:0 3px 12px rgba(0,0,0,.05)}
+.faq-item h3{margin:0 0 10px;color:#2c3e50;font-size:1.08rem}
+.faq-item p{margin:0;color:#666;font-size:.97rem}
+.final-cta{background:linear-gradient(rgba(44,62,80,.94),rgba(44,62,80,.94)),url('capture2-menu-semaine-pictogrammes.png');background-size:cover;background-position:center;color:white;text-align:center;padding:80px 20px}
+.final-cta h2{font-size:2.2rem;margin:0 0 20px}
+.final-cta p{font-size:1.1rem;margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto}
+.share-bar{text-align:center;padding:24px;background:#f8f9fa}
+.share-bar p{margin:0 0 12px;font-weight:600;color:#2c3e50}
+.share-btn{display:inline-block;padding:10px 20px;border-radius:8px;text-decoration:none;margin:0 6px;color:white;font-weight:600}
+.share-tw{background:#1da1f2}
+.share-fb{background:#1877f2}
+.share-li{background:#0a66c2}
+footer{background:#2c3e50;color:white;text-align:center;padding:32px 20px;font-size:.9rem}
+footer p{margin:6px 0}
+footer .small{font-size:.8rem;opacity:.7}
+footer a{color:#1abc9c;text-decoration:none;margin:0 8px}
+#sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#27ae60;color:white;text-align:center;padding:14px;box-shadow:0 -4px 15px rgba(0,0,0,.2);z-index:100}
+#sticky-cta a{color:white;text-decoration:none;font-weight:700}
+@media(max-width:720px){
+.hero h1{font-size:1.7rem}
+.hero h1 img{width:44px;height:44px}
+.hero .subtitle{font-size:1.05rem}
+.section-title{font-size:1.7rem}
+.two-col,.compare-grid{grid-template-columns:1fr}
+.cta-btn{padding:16px 32px;font-size:1.05rem}
+.price{font-size:2.4rem}
+}
+</style>
 </head>
 <body>
-    <nav class="lang-nav" aria-label="Selección de idioma">
-        <a href="index.html" class="lang-btn" aria-label="Versión francesa">FR</a>
-        <a href="index-en" class="lang-btn" aria-label="Versión inglesa">EN</a>
-        <a href="index-es" class="lang-btn active" aria-label="Versión española">ES</a>
-    </nav>
-    
-    <header class="hero">
-        <span class="badge-hero">⚡ Diseñado por un chef, para chefs</span>
-        <h1><img src="logo.png" alt="Logo de MenuPro"> MenuPro</h1>
-        <p class="subtitle">Crea los menús de tu restaurante en 30 segundos. 4 platos del día, entrega el lunes, pedido el viernes: MenuPro genera 15 días de menús de una vez — con pictogramas cerdo, pollo, pescado.</p>
-        <a href="/MenuPro.html" target="_blank" class="cta-btn">🚀 Probar gratis</a>
-        <br><small>Sin tarjeta bancaria · Versión gratuita ilimitada · <a href="/MenuPro.html" download>Descargar para PC</a></small>
-    </header>
-    
-    <div class="trust-bar">
-        <span>✅ Sin tarjeta bancaria</span>
-        <span>🔒 100% local (tus datos se quedan contigo)</span>
-        <span>💳 Pago único — sin suscripción</span>
-        <span>🇫🇷 Diseñado en Francia</span>
-    </div>
-    
-    <main>
-        <section class="container narrow">
-            <h2 class="section-title">La historia detrás de MenuPro</h2>
-            <p class="section-subtitle">Por qué un chef creó este software — y por qué lo cambia todo.</p>
-            <div class="story">
-                <p>Me llamo <strong>Sébastien, soy cocinero</strong>. Empecé en una brasserie: una carta, un menú del día. Fácil, poca anticipación.</p>
-                <p>Luego cambié de tipo de restauración. Pasé a la <strong>cocina obrera</strong>. Ahí todo cambia: tengo que concebir <strong>4 platos del día diferentes cada día</strong>.</p>
-                <p>Y hay una restricción que nadie entiende hasta vivirla: nos <strong>entregan cada lunes a última hora de la mañana</strong>, y mi <strong>pedido se envía el viernes</strong>.</p>
-                <p>Traducción: el viernes, ya tengo que <strong>conocer mis menús hasta el lunes siguiente</strong>. Antes de MenuPro, redactaba mis menús para <strong>15 días</strong> al final de cada semana. Horas perdidas, cada semana.</p>
-                <div class="quote">
-                    «Antes de MenuPro, pasaba horas cada viernes redactando mis menús para 15 días. Hoy genero la base en 30 segundos y luego adapto según la afluencia del restaurante.»
-                </div>
-                <p>Este programa me ha permitido <strong>ganar un tiempo enorme</strong>. Tengo mi base de menús y ajusto según la afluencia.</p>
-                <p>Y como los menús son <strong>imprimibles</strong>, también pueden <strong>exponerse en un comedor escolar</strong> o en una residencia de ancianos. Los <strong>pictogramas cerdo / pollo / pescado</strong> permiten identificar cada plato de un vistazo.</p>
-                <p class="signature">— Sébastien, chef y creador de MenuPro</p>
-            </div>
-        </section>
-        
-        <section class="container">
-            <h2 class="section-title">El problema que quizás conozcas</h2>
-            <p class="section-subtitle">Si te reconoces aquí, MenuPro está hecho para ti.</p>
-            <div class="two-col">
-                <div class="col-card problem">
-                    <h3>😩 Sin MenuPro</h3>
-                    <ul>
-                        <li>Horas redactando menús cada semana</li>
-                        <li>Obligación de anticipar 15 días por las entregas</li>
-                        <li>Riesgo de error en los pedidos</li>
-                        <li>Pérdidas de alimentos por falta de previsión</li>
-                        <li>Menús que se reescriben cada semana</li>
-                        <li>Sin base reutilizable de una semana a otra</li>
-                    </ul>
-                </div>
-                <div class="col-card solution">
-                    <h3>😊 Con MenuPro</h3>
-                    <ul>
-                        <li>Base de menús generada en 30 segundos</li>
-                        <li>Anticipación de 15 días sin esfuerzo</li>
-                        <li>Pedidos precisos, menos pérdidas</li>
-                        <li>Adaptación rápida según afluencia</li>
-                        <li>Menús imprimibles en A4 / A5 / A3</li>
-                        <li>Pictogramas cerdo / pollo / pescado</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <section class="container">
-            <h2 class="section-title">Por qué los chefs aman MenuPro</h2>
-            <p class="section-subtitle">Funciones pensadas para la vida real en cocina.</p>
-            <div class="features-grid">
-                <article class="feature-card"><div class="feature-icon">⚡</div><h3>Generación instantánea</h3><p>Haz clic en "Generar" y elige entre cientos de platos organizados por tipo: entrantes, platos, postres.</p></article>
-                <article class="feature-card"><div class="feature-icon">🐷🐔🐟</div><h3>Pictogramas cerdo / pollo / pescado</h3><p>Identifica cada plato de un vistazo. Ideal para menús expuestos en comedores o salas.</p></article>
-                <article class="feature-card"><div class="feature-icon">🖨️</div><h3>Impresión y exposición</h3><p>Imprime tus menús en A4, A5 o A3 para exponerlos en sala, comedor u oficina.</p></article>
-                <article class="feature-card"><div class="feature-icon">💾</div><h3>100% local</h3><p>Tus datos se guardan en tu ordenador. Sin cuenta online, tu privacidad está garantizada.</p></article>
-                <article class="feature-card"><div class="feature-icon">🔗</div><h3>Recetas con un clic</h3><p>Cada plato es un enlace directo a su receta en Google. Ahorra tiempo a tu equipo.</p></article>
-                <article class="feature-card"><div class="feature-icon">🌍</div><h3>Multiidioma</h3><p>Interfaz disponible en español, inglés y francés para adaptarse a cualquier equipo.</p></article>
-            </div>
-        </section>
-        
-        <section class="container">
-            <h2 class="section-title">¿Para quién es MenuPro?</h2>
-            <p class="section-subtitle">Restaurante, comedor, residencia: misma herramienta, mismo tiempo ganado.</p>
-            <div class="use-cases">
-                <div class="use-case"><h3>🍽️ Restaurante</h3><p>4 platos del día, previsión de pedidos, menos pérdidas.</p></div>
-                <div class="use-case"><h3>🏫 Comedor escolar</h3><p>Menús para exponer, pictogramas, equilibrio alimentario.</p></div>
-                <div class="use-case"><h3>🏥 Residencia de ancianos</h3><p>Menús regulares, fáciles de exponer para los residentes.</p></div>
-                <div class="use-case"><h3>🏭 Cocina obrera</h3><p>Entrega semanal, pedido anticipado, 4 platos al día.</p></div>
-            </div>
-        </section>
-        
-        <section class="container narrow">
-            <h2 class="section-title">Antes / Después de MenuPro</h2>
-            <p class="section-subtitle">El mismo oficio, sin las horas perdidas.</p>
-            <div class="compare-grid">
-                <div class="compare-card before">
-                    <h3>Antes</h3>
-                    <ul>
-                        <li>❌ 3 a 5 horas por semana redactando menús</li>
-                        <li>❌ Estrés del pedido del viernes</li>
-                        <li>❌ Menús reescritos desde cero cada semana</li>
-                        <li>❌ Riesgo de errores en los pedidos</li>
-                    </ul>
-                </div>
-                <div class="compare-card after">
-                    <h3>Después</h3>
-                    <ul>
-                        <li>✅ 30 segundos para generar la base</li>
-                        <li>✅ Pedidos anticipados con tranquilidad</li>
-                        <li>✅ Base reutilizable + adaptación rápida</li>
-                        <li>✅ Menos pérdidas, menos errores</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <section class="container">
-            <h2 class="section-title">Prueba el creador de menús gratis</h2>
-            <p class="section-subtitle">Sin registro, sin tarjeta bancaria. Empieza en 10 segundos.</p>
-            
-            <div class="mockup">
-                <img src="capture1-generation-menu.png" alt="Interfaz del creador de menús MenuPro - generación de platos del día para restaurantes" loading="lazy" width="1366" height="700">
-            </div>
-            <p class="caption">⚡ Genera cada plato del día con un clic — entrantes, platos, postres.</p>
-            
-            <div class="mockup">
-                <img src="capture2-menu-semaine-pictogrammes.png" alt="Menú semanal MenuPro con pictogramas cerdo, pollo, pescado y enlaces a recetas" loading="lazy" width="1366" height="700">
-            </div>
-            <p class="caption">🐷🐔🐟 Pictogramas cerdo / pollo / pescado y enlaces directos a las recetas.</p>
-            
-            <div class="mockup">
-                <img src="capture3-impression-configuration.png" alt="Configuración de impresión MenuPro - formatos A4, A5, A3 y personalizado" loading="lazy" width="1366" height="700">
-            </div>
-            <p class="caption">🖨️ Imprime en A4, A5, A3 — o personaliza el tamaño de fuente y título.</p>
-            
-            <div style="text-align: center;">
-                <a href="/MenuPro.html" target="_blank" class="cta-btn">📥 Abrir el creador de menús</a>
-            </div>
-        </section>
-        
-        <section class="pricing-section">
-            <h2 class="section-title">Elige tu plan</h2>
-            <p class="section-subtitle">Empieza gratis. Pasa a la licencia completa cuando estés listo.</p>
-            <div class="pricing-grid">
-                <article class="pricing-card">
-                    <h3>🆓 Gratis</h3>
-                    <div class="price">0 €</div>
-                    <ul class="features-list">
-                        <li>Versión gratuita ilimitada (sin caducidad)</li>
-                        <li>Solo gestiona la Semana 1</li>
-                        <li>Generador de platos completo</li>
-                        <li>Pictogramas cerdo / pollo / pescado</li>
-                        <li class="disabled">Impresión desactivada</li>
-                    </ul>
-                    <a href="/MenuPro.html" target="_blank" style="background: #95a5a6; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: 600;">Usar online</a>
-                </article>
-                <article class="pricing-card pro">
-                    <div class="badge">EL MÁS ELEGIDO</div>
-                    <h3>🔥 Licencia completa</h3>
-                    <div class="price"><span class="old">149 €</span>79 € <small>pago único</small></div>
-                    <ul class="features-list">
-                        <li>Imprimir A4 / A5 / A3</li>
-                        <li>Exportar y respaldar datos</li>
-                        <li>Gestionar 5 semanas por adelantado</li>
-                        <li>Licencia de por vida — sin suscripción</li>
-                        <li>Actualizaciones incluidas</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00" target="_blank" style="background: #e67e22; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: 600;">Comprar ahora</a>
-                </article>
-            </div>
-            <p class="guarantee"><strong>💡 Pago único.</strong> Sin suscripción, sin gastos ocultos. Pagas una vez y conservas MenuPro de por vida.</p>
-        </section>
-        
-        <section class="container narrow">
-            <h2 class="section-title">Preguntas frecuentes</h2>
-            <p class="section-subtitle">Todo lo que quieres saber antes de empezar.</p>
-            <div class="faq">
-                <article class="faq-item">
-                    <h3>¿Por qué no puedo imprimir con la versión gratuita?</h3>
-                    <p>Porque el menú impreso es el documento de trabajo central de tu cocina. La licencia de 79 € desbloquea la impresión y la exportación de forma permanente.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>¿Puedo añadir mis propias recetas?</h3>
-                    <p>¡Sí! Con la función "Gestionar platos", puedes copiar y pegar tu propio menú y tus platos estrella en segundos.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>¿Funciona el software sin internet?</h3>
-                    <p>¡Sí! Una vez descargado, MenuPro es 100% local. No se necesita conexión para usarlo a diario.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>¿Puedo usarlo para un comedor escolar o una residencia?</h3>
-                    <p>Por supuesto. Los menús son imprimibles y se pueden mostrar, y los pictogramas cerdo / pollo / pescado permiten identificar cada plato al instante.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>¿Hay suscripción mensual?</h3>
-                    <p>No. MenuPro funciona con una licencia de por vida a 79 €, en pago único. Sin suscripción, sin gastos recurrentes.</p>
-                </article>
-                <article class="faq-item">
-                    <h3>¿En qué dispositivos puedo usar MenuPro?</h3>
-                    <p>MenuPro funciona en navegador web (PC o Mac) y se puede descargar para un uso 100% local en PC.</p>
-                </article>
-            </div>
-        </section>
-        
-        <section class="final-cta">
-            <h2>¿Listo para ahorrar horas cada semana?</h2>
-            <p>Prueba MenuPro gratis. Sin registro, sin tarjeta bancaria. Verás el resultado en 30 segundos.</p>
-            <a href="/MenuPro.html" target="_blank" class="cta-btn">🚀 Probar gratis</a>
-            <br><a href="https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00" target="_blank" class="cta-btn secondary" style="margin-top: 16px;">Comprar la licencia — 79 €</a>
-        </section>
-    </main>
-    
-    <footer>
-        <p>© 2026 MenuPro — Creador de menús para restaurantes, comedores y residencias.</p>
-        <p class="small">Diseñado por un chef, para chefs.</p>
-    </footer>
+
+<nav class="lang-nav" aria-label="Selección de idioma">
+<a href="index.html" class="lang-btn">FR</a>
+<a href="index-en" class="lang-btn">EN</a>
+<a href="index-es" class="lang-btn active">ES</a>
+</nav>
+
+<header class="hero">
+<span class="badge-hero">⚡ Hecho por un chef. Para chefs.</span>
+<h1><img id="logo-header" alt="Logo de MenuPro"> MenuPro</h1>
+<p class="subtitle"><strong>Escribe tus menús con un clic. No en una tarde.</strong><br>
+Los demás programas están llenos de funciones inútiles. MenuPro hace una sola cosa — y la hace mejor que nadie: <strong>generar tu menú, al instante</strong>. Un documento listo para imprimir, listo para exponer, listo para ser la base de tu cocina.</p>
+<a href="/MenuPro.html" target="_blank" class="cta-btn">🚀 Crear mi primer menú</a>
+<br><small>Sin cuenta · Sin internet · Sin tarjeta bancaria</small>
+</header>
+
+<div class="trust-bar">
+<span>✅ Sin cuenta que crear</span>
+<span>⚡ Generación instantánea</span>
+<span>🔒 100% local — nunca en línea</span>
+<span>🎯 Una sola función: tus menús</span>
+</div>
+
+<main>
+
+<section class="container narrow">
+<h2 class="section-title">¿Cómo funciona?</h2>
+<p class="section-subtitle">Tres pasos. Diez segundos. Eso es todo.</p>
+<div class="features-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:900px;margin:0 auto">
+<div class="step-box"><div class="step-num">1</div><h3>Abre MenuPro</h3><p>Sin instalación, sin cuenta. Doble clic, está abierto.</p></div>
+<div class="step-box"><div class="step-num">2</div><h3>Haz clic en "Generar"</h3><p>Tu menú completo aparece: entrantes, platos, guarniciones, postres.</p></div>
+<div class="step-box"><div class="step-num">3</div><h3>Imprime y expón</h3><p>A4, A5 o A3. Tu menú se convierte en tu base en cocina.</p></div>
+</div>
+</section>
+
+<section class="container narrow">
+<h2 class="section-title">La historia detrás de MenuPro</h2>
+<p class="section-subtitle">Por qué un chef creó una herramienta simple, cuando todos los demás programas se volvieron complicados.</p>
+<div class="story">
+<p>Me llamo <strong>Sébastien. Soy cocinero.</strong></p>
+<p>Como tú, he pasado tardes enteras escribiendo mis menús a mano. Buscando el equilibrio entre los platos, evitando repeticiones, repensando cada semana las mismas cosas. Y al día siguiente, en plena hora punta, siempre había ese momento en que <strong>olvidaba la receta de un plato</strong>. Buscaba en mis archivadores, perdía minutos preciosos.</p>
+<p>Así que probé los programas existentes. Todos iguales: <strong>demasiado pesados, demasiado caros, demasiadas funciones que nadie usa</strong>. Gestión de stock, contabilidad, planificación de personal… No era lo que buscaba. Y lo peor: había que crear una cuenta, iniciar sesión, estar en línea. Solo para escribir un menú.</p>
+<div class="quote">«No buscaba un programa de gestión. Buscaba una herramienta que hiciera una sola cosa: darme un menú con un clic, en mi casa, sin depender de nadie. Y que, cuando olvido una receta en pleno servicio, me la dé en un segundo.»</div>
+<p>Así que creé <strong>MenuPro</strong>. Y hoy, no puedo vivir sin él. Aquí está por qué.</p>
+<h3>⚡ Un clic. Un menú.</h3>
+<p>Abro el programa, hago clic en <strong>"Generar"</strong>, y mi menú completo aparece: entrantes, platos, guarniciones, postres. <strong>Al instante</strong>. Sin carga, sin espera, sin conexión a internet. Elijo, ajusto, listo.</p>
+<p>Lo que antes me llevaba una hora, ahora me lleva <strong>dos minutos</strong>.</p>
+<h3>🔗 La función que cambió mi día a día: la receta con un clic</h3>
+<p>¿Conoces ese momento en que, en plena hora punta, <strong>olvidas la receta de un plato</strong>? Antes era el pánico. Ahora, <strong>cada plato de mi menú es un enlace directo a su receta en Google</strong>. Hago clic, la receta se abre, estoy salvado.</p>
+<h3>🖨️ Un verdadero documento de trabajo</h3>
+<p>El resultado de MenuPro no es un juguete. Es un <strong>documento listo para imprimir</strong> — A4, A5 o A3. Lo expongo en la cocina, en la sala. Se convierte en <strong>la base de mi organización</strong>: pedidos, preparación, servicio.</p>
+<h3>🐷🐔🐟🐄🥬🍰 Seis pictogramas, un segundo para entender</h3>
+<p>Cerdo, pollo, pescado, ternera, verdura, postre. Cada plato identificado de un vistazo. <strong>Ningún cliente se equivoca</strong>, ninguna duda en sala. Para comedores, residencias, restaurantes escolares — es imprescindible.</p>
+<h3>🔒 Cero cuenta. Cero conexión. Cero dependencia.</h3>
+<p>Sin registro. Sin contraseña. Sin internet. <strong>Tus datos se quedan en tu ordenador</strong>, y nadie más tiene acceso. El programa funciona incluso si tu router cae.</p>
+<h3>📝 Mis platos, mis recetas, mis reglas</h3>
+<p>MenuPro viene con cientos de platos listos para usar. Pero si tienes tus propias recetas, <strong>las añades en segundos</strong>. Copiar-pegar tu lista, listo. Mantienes <strong>tu identidad, tu estilo, tu cocina</strong>.</p>
+<h3>💾 Guardar y exportar con un clic</h3>
+<p>¿Un menú que te encanta? Lo guardas. ¿Cambias de ordenador? Exportas todo con un clic y lo importas donde quieras. <strong>Tu trabajo nunca se pierde.</strong></p>
+<h3>🌍 Tres idiomas, un solo equipo</h3>
+<p>Francés, inglés, español. Todo tu equipo trabaja en su idioma, con el mismo menú, los mismos platos. <strong>Se acabaron los malentendidos en cocina.</strong></p>
+<h3>⏱️ ¿El resultado?</h3>
+<p>He ganado <strong>horas cada semana</strong>. Ya no tengo ese peso del viernes por la noche escribiéndolo todo. Ya no tengo el pánico cuando olvido una receta en pleno servicio. Tengo <strong>una herramienta simple, rápida, eficaz</strong>, que hace exactamente lo que le pido — y nada más.</p>
+<p>Trabajo solo en mi cocina — y aun así, este programa me ahorra un tiempo precioso. Lo uso cada día, y hace exactamente lo que espero de él.</p>
+<p><strong>MenuPro no es un programa más. Es el único que necesito.</strong></p>
+<p class="signature">— Sébastien, cocinero y creador de MenuPro</p>
+</div>
+</section>
+
+<section class="container narrow">
+<h2 class="section-title">Por qué MenuPro es diferente</h2>
+<p class="section-subtitle">La mayoría de los programas intentan hacerlo todo. MenuPro hace una sola cosa — perfectamente.</p>
+<div class="compare-grid">
+<div class="compare-card before">
+<h3>Los demás programas</h3>
+<ul>
+<li>❌ Gestión de stock, contabilidad, planificación…</li>
+<li>❌ Cuenta que crear, inicio de sesión obligatorio</li>
+<li>❌ Suscripción mensual que se acumula</li>
+<li>❌ Interfaces complejas, formación necesaria</li>
+<li>❌ Tus datos guardados en sus servidores</li>
+<li>❌ Una máquina monstruosa solo para escribir un menú</li>
+</ul>
+</div>
+<div class="compare-card after">
+<h3>MenuPro</h3>
+<ul>
+<li>✅ Una sola función: generar tus menús</li>
+<li>✅ Sin cuenta. Sin conexión.</li>
+<li>✅ Pago único — 79 €, de por vida</li>
+<li>✅ Uso inmediato, cero formación</li>
+<li>✅ Tus datos se quedan en tu ordenador</li>
+<li>✅ Un clic. Un menú. Eso es todo.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="container">
+<h2 class="section-title">Por qué los chefs aman MenuPro</h2>
+<p class="section-subtitle">Funciones pensadas para la vida real en cocina.</p>
+<div class="features-grid">
+<article class="feature-card"><div class="feature-icon">⚡</div><h3>Instantáneo</h3><p>Sin carga, sin espera. Haces clic, tu menú aparece.</p></article>
+<article class="feature-card"><div class="feature-icon">🎯</div><h3>Una sola función</h3><p>Generar tus menús. Sin gestión de stock. Sin contabilidad. Sin ruido.</p></article>
+<article class="feature-card"><div class="feature-icon">🔒</div><h3>Cero cuenta, cero conexión</h3><p>Sin registro. Sin contraseña. Sin internet. Tus datos se quedan contigo.</p></article>
+<article class="feature-card"><div class="feature-icon">🔗</div><h3>Receta con un clic</h3><p>Cada plato enlaza directamente con su receta en Google. Se acabaron los olvidos en pleno servicio.</p></article>
+<article class="feature-card"><div class="feature-icon">🖨️</div><h3>Un documento de trabajo</h3><p>Imprime en A4, A5 o A3. Tu menú se convierte en tu base en cocina, sala, comedor.</p></article>
+<article class="feature-card"><div class="feature-icon">🌍</div><h3>Tres idiomas</h3><p>ES, FR, EN. Todo tu equipo trabaja en su idioma, sobre el mismo menú.</p></article>
+</div>
+</section>
+
+<section class="container narrow">
+<h2 class="section-title">6 pictogramas. Un segundo para entender.</h2>
+<p class="section-subtitle">Cada plato está identificado con un pictograma claro. Para ti, tu equipo y tus clientes.</p>
+<div class="picto-grid">
+<div class="picto-box"><div class="picto-emoji">🐷</div><div class="picto-label">Cerdo</div></div>
+<div class="picto-box"><div class="picto-emoji">🐔</div><div class="picto-label">Pollo</div></div>
+<div class="picto-box"><div class="picto-emoji">🐟</div><div class="picto-label">Pescado</div></div>
+<div class="picto-box"><div class="picto-emoji">🐄</div><div class="picto-label">Ternera</div></div>
+<div class="picto-box"><div class="picto-emoji">🥬</div><div class="picto-label">Verdura</div></div>
+<div class="picto-box"><div class="picto-emoji">🍰</div><div class="picto-label">Postre</div></div>
+</div>
+</section>
+
+<section class="container">
+<h2 class="section-title">¿Para quién es MenuPro?</h2>
+<p class="section-subtitle">Restaurante, comedor, residencia: misma herramienta, mismo tiempo ganado.</p>
+<div class="use-cases">
+<div class="use-case"><h3>🍽️ Restaurante</h3><p>4 platos del día, previsión de pedidos, menos pérdidas.</p></div>
+<div class="use-case"><h3>🏫 Comedor escolar</h3><p>Menús para exponer, pictogramas, equilibrio alimentario.</p></div>
+<div class="use-case"><h3>🏥 Residencia de ancianos</h3><p>Menús regulares, fáciles de exponer para los residentes.</p></div>
+<div class="use-case"><h3>🏭 Cocina obrera</h3><p>Entrega semanal, pedido anticipado, 4 platos al día.</p></div>
+</div>
+</section>
+
+<section class="container narrow">
+<h2 class="section-title">Qué obtienes concretamente</h2>
+<p class="section-subtitle">Sin promesas vagas. Esto es exactamente lo que MenuPro hace por ti.</p>
+<div class="two-col">
+<div class="col-card solution">
+<h3>📋 Tu menú completo</h3>
+<ul>
+<li>Entrantes calientes y fríos</li>
+<li>Platos principales</li>
+<li>Guarniciones (opcional)</li>
+<li>Postres</li>
+<li>Pictogramas: cerdo / pollo / pescado / ternera / verdura / postre</li>
+<li>Enlace a la receta en cada plato</li>
+</ul>
+</div>
+<div class="col-card solution">
+<h3>🖨️ Tu documento listo para usar</h3>
+<ul>
+<li>Impresión A4, A5 o A3</li>
+<li>Fuente personalizable</li>
+<li>Nombre + dirección + contacto de tu restaurante</li>
+<li>Fecha y semana mostradas</li>
+<li>Guardado local automático</li>
+<li>Exportar / importar tus datos</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="container narrow">
+<h2 class="section-title">Tus datos se quedan contigo. Siempre.</h2>
+<p class="section-subtitle">MenuPro no recopila nada. Sin tracking, sin cookies publicitarias, sin reventa de datos.</p>
+<div class="story" style="font-size:1.05rem">
+<p><strong>🔒 100% local:</strong> todo se guarda en tu navegador, en tu ordenador. Ningún dato se envía a internet.</p>
+<p><strong>🚫 Sin cuenta:</strong> ni siquiera sabemos quién eres. Sin email, sin contraseña, sin perfil.</p>
+<p><strong>🍪 Cero cookies de tracking:</strong> sin herramientas de análisis de terceros, sin publicidad segmentada.</p>
+<p><strong>🇪🇺 Conforme RGPD:</strong> ningún dato personal tratado → cumplimiento total.</p>
+</div>
+</section>
+
+<section class="container">
+<h2 class="section-title">Prueba el creador de menús gratis</h2>
+<p class="section-subtitle">Sin registro, sin tarjeta bancaria. Empieza en 10 segundos.</p>
+<div class="mockup"><img src="capture1-generation-menu.png" alt="Interfaz del creador de menús MenuPro" loading="lazy" width="1366" height="700"></div>
+<p class="caption">⚡ Genera cada plato del día con un clic — entrantes, platos, postres.</p>
+<div class="mockup"><img src="capture2-menu-semaine-pictogrammes.png" alt="Menú semanal con pictogramas" loading="lazy" width="1366" height="700"></div>
+<p class="caption">🐷🐔🐟🐄🥬🍰 Pictogramas y enlaces directos a las recetas.</p>
+<div class="mockup"><img src="capture3-impression-configuration.png" alt="Configuración de impresión A4, A5, A3" loading="lazy" width="1366" height="700"></div>
+<p class="caption">🖨️ Imprime en A4, A5, A3 — o personaliza.</p>
+<div style="text-align:center"><a href="/MenuPro.html" target="_blank" class="cta-btn">📥 Abrir el creador de menús</a></div>
+</section>
+
+<section class="container narrow" style="text-align:center">
+<h2 class="section-title" style="margin-bottom:12px">Un clic. Un menú. Eso es todo.</h2>
+<p style="font-size:1.15rem;color:#555;max-width:700px;margin:0 auto">Si buscas un programa que lo haga todo, MenuPro no es para ti.<br>Si buscas una herramienta que haga <strong>una sola cosa, pero perfectamente</strong> — estás en el lugar correcto.</p>
+</section>
+
+<section class="pricing-section">
+<h2 class="section-title">Elige tu plan</h2>
+<p class="section-subtitle">Empieza gratis. Pasa a la licencia completa cuando estés listo.</p>
+<div class="pricing-grid">
+<article class="pricing-card">
+<h3>🆓 Gratis</h3>
+<div class="price">0 €</div>
+<ul class="features-list">
+<li>Versión gratuita ilimitada</li>
+<li>Solo gestiona la Semana 1</li>
+<li>Generador de platos completo</li>
+<li>6 pictogramas</li>
+<li class="disabled">Impresión desactivada</li>
+</ul>
+<a href="/MenuPro.html" target="_blank" style="background:#95a5a6;color:white;padding:15px 30px;border-radius:8px;text-decoration:none;display:inline-block;font-weight:600">Usar online</a>
+</article>
+<article class="pricing-card pro">
+<div class="badge">EL MÁS ELEGIDO</div>
+<h3>🔥 Licencia completa</h3>
+<div class="price"><span class="old">149 €</span>79 € <small>pago único</small></div>
+<ul class="features-list">
+<li>Imprimir A4 / A5 / A3</li>
+<li>Exportar y respaldar datos</li>
+<li>Gestionar 5 semanas por adelantado</li>
+<li>Licencia de por vida — sin suscripción</li>
+<li>Actualizaciones incluidas</li>
+</ul>
+<a href="https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00" target="_blank" style="background:#e67e22;color:white;padding:15px 30px;border-radius:8px;text-decoration:none;display:inline-block;font-weight:600">Comprar ahora</a>
+</article>
+</div>
+<p class="guarantee"><strong>💡 Pago único.</strong> Sin suscripción, sin gastos ocultos. Pagas una vez y conservas MenuPro de por vida.</p>
+</section>
+
+<section class="container narrow">
+<h2 class="section-title">Preguntas frecuentes</h2>
+<p class="section-subtitle">Todo lo que quieres saber antes de empezar.</p>
+<div class="faq">
+<article class="faq-item"><h3>¿Por qué MenuPro es más simple que los demás programas?</h3><p>Porque solo hace una cosa: generar tus menús. Sin gestión de stock, sin contabilidad, sin planificación de personal. Sin cuenta que crear, sin conexión a internet. Lo abres, haces clic, está listo.</p></article>
+<article class="faq-item"><h3>¿Hay que crear una cuenta o estar conectado a internet?</h3><p>No. MenuPro funciona 100% en local en tu ordenador. Sin cuenta, sin contraseña, sin conexión a internet. Tus datos nunca salen de tu máquina.</p></article>
+<article class="faq-item"><h3>¿Qué significan los pictogramas?</h3><p>MenuPro asocia automáticamente a cada plato un pictograma claro: 🐷 cerdo, 🐔 pollo, 🐟 pescado, 🐄 ternera, 🥬 verdura, 🍰 postre. Ideal para comedores, residencias y restaurantes escolares.</p></article>
+<article class="faq-item"><h3>¿Por qué no puedo imprimir con la versión gratuita?</h3><p>Porque el menú impreso es el documento de trabajo central de tu cocina. La licencia de 79 € desbloquea la impresión y la exportación de forma permanente.</p></article>
+<article class="faq-item"><h3>¿Puedo añadir mis propias recetas?</h3><p>¡Sí! Con la función "Gestionar platos", puedes copiar y pegar tu propio menú y tus platos estrella en segundos.</p></article>
+<article class="faq-item"><h3>¿Funciona el software sin internet?</h3><p>¡Sí! Una vez descargado, MenuPro es 100% local. No se necesita conexión para usarlo a diario.</p></article>
+<article class="faq-item"><h3>¿Hay suscripción mensual?</h3><p>No. MenuPro funciona con una licencia de por vida a 79 €, en pago único. Sin suscripción, sin gastos recurrentes.</p></article>
+</div>
+</section>
+
+<section class="final-cta">
+<h2>Deja de escribir tus menús a mano.</h2>
+<p>Un clic. Un menú. Listo para imprimir, listo para exponer, listo para trabajar.</p>
+<a href="/MenuPro.html" target="_blank" class="cta-btn">🚀 Crear mi primer menú</a>
+<br><a href="https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00" target="_blank" class="cta-btn secondary" style="margin-top:16px">Desbloquear impresión — 79 €</a>
+</section>
+
+<div class="share-bar">
+<p>¿Te gusta MenuPro? Compártelo 🍽️</p>
+<a class="share-btn share-tw" href="https://twitter.com/intent/tweet?text=Descubre%20MenuPro%20—%20el%20creador%20de%20menús%20con%20un%20clic&url=https://menupro2.com/index-es" target="_blank">Twitter / X</a>
+<a class="share-btn share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://menupro2.com/index-es" target="_blank">Facebook</a>
+<a class="share-btn share-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https://menupro2.com/index-es" target="_blank">LinkedIn</a>
+</div>
+
+</main>
+
+<footer>
+<p>© 2026 MenuPro — Creador de menús para restaurantes, comedores y residencias.</p>
+<p class="small">Hecho por un chef, para chefs.</p>
+<p style="margin-top:18px;font-size:.85rem">
+<a href="/mentions-legales">Aviso legal</a> ·
+<a href="/cgv">Términos</a> ·
+<a href="/confidentialite">Privacidad</a> ·
+<a href="mailto:tiber81@hotmail.fr">Contacto</a>
+</p>
+</footer>
+
+<div id="sticky-cta"><a href="/MenuPro.html" target="_blank">🚀 Probar MenuPro gratis</a></div>
+
+<script>
+(function(){
+  var LOGO_B64 = "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";
+  var uri = "data:image/webp;base64," + LOGO_B64;
+  var fav = document.getElementById('favicon-link'); if (fav) fav.href = uri;
+  var logo = document.getElementById('logo-header'); if (logo) logo.src = uri;
+  if (window.innerWidth <= 768) {
+    var cta = document.getElementById('sticky-cta');
+    var update = function(){ cta.style.display = window.scrollY > 600 ? 'block' : 'none'; };
+    window.addEventListener('scroll', update); update();
+  }
+})();
+</script>
+
 </body>
 </html>
