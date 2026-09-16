@@ -4,46 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuPro - Générateur de Menu pour Restaurateurs | Créé par un chef</title>
-
     <meta name="description" content="MenuPro — Générateur de menus professionnels pour restaurants. Créez vos menus hebdomadaires, entrées, plats, desserts en quelques clics. Créé par un chef pour les chefs.">
     <meta name="keywords" content="menu restaurant, générateur de menu, menu hebdomadaire, carte restaurant, MenuPro, logiciel menu, chef, cuisine">
     <meta name="author" content="MenuPro">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://menupro2.com/">
-
     <meta property="og:type" content="website">
     <meta property="og:title" content="MenuPro - Générateur de Menu pour Restaurateurs">
     <meta property="og:description" content="Créez vos menus hebdomadaires professionnels en quelques clics. Entrées, plats, desserts, garnitures — tout est prêt.">
     <meta property="og:url" content="https://menupro2.com/">
     <meta property="og:site_name" content="MenuPro">
     <meta property="og:locale" content="fr_FR">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MenuPro - Générateur de Menu pour Restaurateurs">
     <meta name="twitter:description" content="Créez vos menus hebdomadaires professionnels en quelques clics.">
-
     <meta name="theme-color" content="#2c3e50">
-
     <link rel="icon" type="image/webp" id="favicon-link">
-
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "MenuPro",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "description": "Générateur de menus professionnels pour restaurants. Créé par un chef pour les chefs.",
-      "url": "https://menupro2.com/",
-      "offers": {
-        "@type": "Offer",
-        "price": "79",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock"
-      }
-    }
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Générateur de menus professionnels pour restaurants. Créé par un chef pour les chefs.","url":"https://menupro2.com/","offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}
     </script>
-
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; padding: 20px; color: #333; }
@@ -93,6 +72,7 @@
         #export-backup-btn.disabled { background: #95a5a6; cursor: not-allowed; opacity: 0.6; }
         #import-backup-btn { background: #27ae60; color: white; }
         #import-backup-btn.disabled { background: #95a5a6; cursor: not-allowed; opacity: 0.6; }
+        #clear-storage-btn { background: #e74c3c; color: white; margin-top: 15px; width: 100%; }
         .notification { position: fixed; top: 20px; right: 20px; padding: 15px; border-radius: 5px; background: #27ae60; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: none; z-index: 1000; }
         .plat-container { margin-bottom: 15px; padding: 10px; background: #f8f9fa; border-radius: 5px; position: relative; }
         .plat-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 5px; }
@@ -292,6 +272,7 @@
                 </div>
             </div>
             <button id="save-config-btn" data-translate="save_configuration">Enregistrer la configuration</button>
+            <button id="clear-storage-btn">🗑️ Réinitialiser les données locales</button>
         </div>
     </div>
 
@@ -642,7 +623,6 @@
     "patisseries": ["Albaricoques 🍑","Albaricoques en almíbar 🍑","Albaricoques con almendras 🍑","Albaricoques con castañas 🍑","Acrópolis al chocolate 🍫","Piña con mousse de chocolate 🍍","Piña fresca 🍍","Apple crumble 🍎","Baba con nata montada 🍰","Plátano 🍌","Plátano al limón 🍌","Plátano martiniqués 🍌","Bavarois de melocotón 🍑","Bavarois de fresas salsa chocolate 🍓","Bavarois capuchino salsa pistacho ☕","Bavarois rayado 🍰","Buñuelos de manzana 🍩","Buñuelos de piña 🍩","Bocadito crema pastelera 🥧","Bola de nieve chocolate 🍫","Brownies de Virginia 🍫","Tronco de Navidad capuchino ☕","Tronco de Navidad chocolate 🍫","Tronco de Navidad Grand Marnier 🍊","Tronco de Navidad de castaña 🌰","Tronco de Navidad de frutos rojos 🍓","Tronco de Navidad a la naranja 🍊","Bizcocho de frutos de santones 🍰","Casata de frutas confitadas 🍰","Cerezas 🍒","Nata montada a la frambuesa 🍇","Carlota de chocolate 🍫","Carlota de frutas 🍓","Carlota dos chocolates 🍫","Carlota mousse praliné 🌰","Empanadilla de manzana 🍎","Chocolate brasileño 🍫","Petisú de nata 🍩","Petisú de mousse smarties 🍩","Petisú de café ☕","Petisú de chocolate 🍫","Petisú de chocolate blanco 🍫","Petisú nata montada 🍩","Petisú nata montada salsa fresa 🍓","Petisú chiboust 🍩","Petisú sorpresa 🍩","Petisús saint-honoré 🍩","Clafoutis de melocotones 🍑","Clafoutis de peras 🍐","Clafoutis de manzanas 🍎","Clafoutis de ciruelas 🍑","Clafoutis de frutos rojos 🍓","Clementina 🍊","Cóctel de albaricoques 🍑","Cóctel de agrios 🍊","Cóctel delicia 🍹","Cóctel Florida 🍹","Cóctel máscara 🍹","Coco de mousse blanca 🥥","Compota de albaricoques 🍑","Compota de melocotones 🍑","Compota de manzanas 🍎","Compota de todas las frutas 🍎","Copa bicolor 🍨","Copa californiana 🍨","Copa cevenola 🍨","Copa de piña y nata 🍍","Copa de piña y frutas 🍍","Copa tropical 🍹","Copa tutti frutti 🍨","Copita Belle Hélène 🍐","Crema de mousse de coco 🥥","Crema salsa caramelo 🍮","Crema de vainilla 🍦","Crema de piña 🍍","Crema inglesa de bizcocho 🍮","Crema inglesa con ciruelas 🍮","Crema inglesa criolla 🍮","Crema de caramelo 🍮","Crema de limón 🍋","Crema Grand Marnier 🍊","Crema de almendras 🌰","Crema de frutas 🍓","Crema de huevos 🍮","Crema de melocotones 🍑","Crema de manzanas 🍎","Crema brasileña 🍮","Crema quemada 🍮","Crema quemada al albaricoque 🍑","Crema quemada a la naranja 🍊","Crema quemada en hábito rojo 🍮","Crema chabrillan 🍮","Crema choco-vainilla 🍫","Crema de castaña nata montada 🌰","Crema postre de peras 🍐","Crema postre chocolate al praliné 🍫","Crema fréneuse 🍮","Crema pastelera y almendras caramelizadas 🌰","Crema praliné con galletas 🌰","Crema volteada de almendras 🌰","Crema volteada de manzanas 🍎","Crema vainilla con fresas 🍓","Crema vainilla con frutas 🍦","Crema vainilla plombière 🍦","Crepe de chocolate 🍫","Crepe de azúcar 🥞","Dacquoise de café ☕","Delicia de frambuesas 🍇","Delicioso praliné 🌰","Postre del dragón 🐉","Dulzura de chocolate 🍫","Dúo de entremets 🍰","Éclair de chocolate blanco 🍫","Éclair de mousse choco 🍫","Éclair de avellana 🌰","Entremets a la antigua 🍰","Entremets a la liejesa 🍰","Entremets de mousse negra 🍫","Entremets ligero limón 🍋","Entremets de pan de especias 🍞","Entremets de almendras 🌰","Entremets de frutas 🍓","Entremets de kiwis 🥝","Entremets chocolate 🍫","Entremets chocolate naranjas confitadas 🍫","Entremets de Borgoña 🍰","Entremets Grand Marnier 🍊","Entremets mokambo ☕","Entremets praliné de avellanas 🌰","Entremets yin yang 🍰","Far bretón 🍮","Feuillantine de mousse de chocolate 🍫","Feuillantine de fresas con mousse choco 🍓","Hojaldre de crema de castañas 🌰","Hojaldre albigés 🥐","Hojaldre de frutas 🍎","Hojaldre de peras 🍐","Hojaldre de manzanas 🍎","Flan a la naranja 🍊","Flan a la gitana 🍮","Flan de coco 🥥","Flan albaricoque y arándanos 🍑","Flan albaricoque y pistacho 🍑","Flan albaricoque seco chocolate 🍫","Flan de chocolate 🍫","Flan de limón 🍋","Flan de almendras 🌰","Flan de la selva 🍮","Flan de peras a la Bourdaloue 🍐","Flan pastelero 🍮","Flan pastelero agenais 🍮","Flan vainilla caramelizado 🍮","Flan vainilla y pera 🍐","Flaugnarde de kiwis 🥝","Selva Negra 🍒","Frescura de Armórica 🍓","Fresas con azúcar 🍓","Fraisier 🍓","Framboisier 🍇","Queso fresco con nata 🥛","Queso fresco agenais 🥛","Queso fresco al chocolate 🍫","Queso fresco y frambuesas 🍇","Frutas en ropa exótica 🍍","Tortita de azúcar 🍬","Pastel a la naranja 🍊","Pastel de coco 🥥","Pastel caraque 🍰","Pastel creusois 🍰","Pastel de las islas 🏝️","Pastel marmolado 🍫","Pastel normando 🍎","Pastel ópera ☕","Pastel salsa fresa 🍓","Gofre 🧇","Gofre casero 🧇","Genovesa de almendras 🌰","Golosina feuilletine 🍫","Gratinado de frutas 🍓","Isla de caramelo 🍮","Isla Grand Marnier 🍊","Isla de frambuesas 🍇","Isla flotante de café ☕","Isla flotante al limón 🍋","Isla praliné de caramelo 🌰","Isla rosa 🌸","Isla vainillada de frutos rojos 🍓","Isla vainillada de avellanas 🌰","Isla verde 🍃","Islas flotantes 🍮","Imperial a la japonesa 🍮","Imperial de queso 🧀","Jalousie de frangipane 🥐","Kiwi 🥝","El exótico 🍍","El exquisito 🍫","El indio 🍮","El italiano 🍮","Marquesa de chocolate negro 🍫","Melón 🍈","Merengue praliné 🍮","Milhojas del gourmet 🍰","Espejo de arándanos 🫐","Moca ☕","Mousse de coco 🥥","Mousse antillana 🍮","Mousse de café ☕","Mousse de fresas 🍓","Mousse de frambuesas 🍇","Mousse nata montada 🍮","Mousse chocolate a la inglesa 🍫","Mousse coco al melocotón 🥥","Mousse de mijo 🌾","Mousse de escarabajo crujiente 🍫","Mousse de los trópicos 🍹","Mousse del chef 🍫","Mousse fuegos artificiales 🎆","Mousse selva negra 🍒","Mousse italiana 🍮","Mousse licor de naranja 🍊","Mousse sorpresa 🍫","Mousse tutti frutti 🍨","Mousse veneciana 🍮","Mousse rayada 🍫","Nieve de cerezas 🍒","Naranja 🍊","Naranja confitada mousse chocolate 🍫","Pomelo 🍊","Pomelo con azúcar 🍊","Pomelo con frutas 🍊","Parfait de tres sabores 🍨","Paris-brest de praliné 🥨","Melocotón al vino 🍑","Melocotón amarillo 🍑","Melocotón sorpresa 🍑","Melocotones en almíbar 🍑","Petit-suisse en camisa 🥛","Plantador antillano 🍹","Pera al chocolate 🍐","Pera cocida al vino 🍷","Pera doyenne du comice 🍐","Pera y crema inglesa 🍐","Pera orangine 🍐","Pera passe-crassane 🍐","Pera pastelera 🍐","Pera Williams 🍐","Peras en almíbar 🍐","Peral 🍐","Pomelos-naranja en ensalada 🍊","Manzana y coulis de frambuesa 🍎","Manzana a la Ninon 🍎","Manzana con coulis de frutas 🍎","Manzana al horno 🍎","Manzana blanca nieve 🍎","Manzana golden 🍎","Manzana Granny Smith 🍎","Manzana Jackson 🍎","Manzanas macaire 🍎","Profiteroles de chocolate 🍫","Ciruelas 🍑","Cuatro cuartos de frutas 🍰","Quenelles tres chocolates 🍫","Ciruelas claudias en almíbar 🍑","Uva blanca 🍇","Uva negra 🍇","Arroz con leche 🍚","Arroz con leche a la Condé 🍚","Arroz con leche con guindas 🍒","Enrollado de compota 🍰","Enrollado de mermelada 🍰","Sablés de almendras 🌰","Ensalada Acapulco 🍹","Ensalada de plátano Sofía 🍌","Ensalada de frutas a la menta 🍓","Ensalada de frutas al vino moscatel 🍇","Ensalada de frutas de verano 🍓","Ensalada de frutas amarillas 🍑","Ensalada manzanas y kiwis 🍎","Ensalada manzanas y ciruelas 🍎","Samba del carnaval 🎭","Sémola de frutas 🌾","Sopa de frutos rojos 🍓","Sorpresa de chocolate 🍫","Tarta de piña 🍍","Tarta de frutos del bosque 🍓","Tarta de mirabeles 🍑","Tarta de arándanos 🫐","Tarta de peras 🍐","Tarta de manzanas a la alsaciana 🍎","Tarta de ciruelas 🍑","Tarta chocopera 🍫","Tarta de limón merengada 🍋","Tarta de los montes de oro 🍎","Tarta pastelera 🍰","Tartaleta a la lombarda 🍰","Tartaleta de piña 🍍","Tartaleta de naranja 🍊","Tartaleta ardechena 🍑","Tartaleta de chocolate 🍫","Tartaleta de limón 🍋","Tartaleta de albaricoques 🍑","Tartaleta de cerezas 🍒","Tartaleta de fresas 🍓","Tartaleta de kiwis 🥝","Tartaleta de peras 🍐","Tartaleta de manzanas 🍎","Tartaleta de crema quemada 🍮","Tiramisú ☕","Tutti de frutas tropicales 🍹","Volcán de la selva 🌋","Tarta de limón merengada (var) 🍋","Tarta de manzana normanda 🍎","Tarta fina de manzanas 🍎","Tarta de fresas 🍓","Tarta Tatin 🍎","Tarta de peras almendrada 🍐","Tarta de peras chocolate 🍐","Tarta de chocolate (var) 🍫","Tarta de ruibarbo 🍓","Tarta de ciruelas claudias 🍑","Tarta de azúcar 🍬","Éclair de chocolate 🍫","Éclair de café ☕","Éclair de vainilla 🍦","Éclair de caramelo salado 🍮","Éclair de frutos rojos 🍓","Religiosa de chocolate 🍫","Religiosa de café ☕","Paris-Brest (var) 🥨","Saint-Honoré (var) 🎂","Milhojas 🍰","Ópera 🎂","Selva Negra (var) 🍒","Crema caramelo 🍮","Isla flotante 🍦","Pera Belle Hélène 🍐","Melocotón Melba 🍑","Profiteroles de chocolate (var) 🍫","Baba al ron 🍸","Savarín 🍩","Panna cotta de frutos rojos 🍓","Panna cotta de vainilla 🍦","Tiramisú (var) ☕","Carlota de peras 🍐","Carlota de chocolate (var) 🍫","Carlota de fresas 🍓","Bavarois de chocolate 🍫","Bavarois de frambuesa 🍇","Mousse de chocolate 🍫","Mousse de frambuesa (var) 🍇","Marquesa de chocolate (var) 🍫","Coulant de chocolate (corazón fundente) 🍫","Moelleux de chocolate 🍫","Suflé Grand Marnier 🍊","Suflé de chocolate 🍫","Huevos a la nieve ❄️","Trifle 🍰","Clafoutis de cerezas 🍒","Clafoutis de ciruelas 🍑","Far bretón (var) 🍮","Flan parisino 🍮","Flan pastelero (var) 🍮","Crumble de manzana 🍎","Crumble de albaricoque 🍑","Tarta tropezienne 🍰","Pastel vasco (crema) 🍮","Pastel vasco (cerezas) 🍒","Kouign-amann 🧈","Financier 🍰","Magdalena 🍰","Canelé 🍮","Palmera 🍪","Chouquette 🍩","Galleta con pepitas de chocolate 🍪","Brownie (var) 🍫","Pastel de frutas confitadas 🍍","Cuatro cuartos 🍰","Pastel de yogur 🍦","Pastel de chocolate 🍫","Pastel marmolado (var) 🍫","Pan de especias 🍞","Bugne lionesa 🍩","Millas (Córcega) 🍰","Fiadone (Córcega) 🍰","Tarta de maton (Norte) 🧀","Galette de Pérouges 🥞","Navette de Marsella 🚢","Calisson de Aix 🍬","Turrón de Montélimar 🍬","Tarta de queso blanco (Alsacia) 🧀","Buñuelo de Carnaval 🎭","Pogne de Romans 👑","Pastel de Saboya 🏔️","Pastel de arroz 🍚","Pastel de sémola 🌾","Crepe Suzette 🥞","Sopa de frutos rojos (var) 🍓","Pera escalfada en vino tinto 🍷","Manzana al horno (var) 🍎","Plátano flambeado 🍌","Piña flambeada 🍍","Tortilla noruega 🥚","Croissant de almendras 🥐","Pan de chocolate 🥐","Empanadilla de manzana (var) 🍎","Roscón de Reyes (en temporada) 👑","Tronco de Navidad (en temporada) 🎄"]
 };
     const platsDataMultiLang = { fr: platsFr, en: platsEn, es: platsEs };
-    // ============================================================
 
     const translations = {
         fr: {
@@ -738,20 +718,34 @@
 
     let menuData = { 1: {}, 2: {}, 3: {}, 4: {}, 5: {} };
 
+    // ============================================================
+    // ✅ CORRECTION 1 : loadData() sans accumulation infinie
+    // ============================================================
     function loadData() {
         var savedData = localStorage.getItem('menuData');
         var savedConfig = localStorage.getItem('menuConfig');
         var savedLang = localStorage.getItem('menuLang');
         var savedPlats = localStorage.getItem('platsData');
-        if (savedData) { var parsed = JSON.parse(savedData); for (var w = 1; w <= 5; w++) { if (parsed[w]) menuData[w] = parsed[w]; } }
-        if (savedConfig) config = Object.assign({}, config, JSON.parse(savedConfig));
+        if (savedData) { try { var parsed = JSON.parse(savedData); for (var w = 1; w <= 5; w++) { if (parsed[w]) menuData[w] = parsed[w]; } } catch(e) { console.warn('menuData corrompu'); localStorage.removeItem('menuData'); } }
+        if (savedConfig) { try { config = Object.assign({}, config, JSON.parse(savedConfig)); } catch(e) { console.warn('config corrompu'); localStorage.removeItem('menuConfig'); } }
         if (savedLang) currentLang = savedLang;
+        // Charge uniquement les plats ajoutés par l'utilisateur (pas ceux hardcodés)
         if (savedPlats) {
-            var savedPlatsData = JSON.parse(savedPlats);
-            for (var category in savedPlatsData) {
-                if (platsDataMultiLang[currentLang] && platsDataMultiLang[currentLang][category]) {
-                    platsDataMultiLang[currentLang][category] = Array.from(new Set([...platsDataMultiLang[currentLang][category], ...savedPlatsData[category]]));
+            try {
+                var savedPlatsData = JSON.parse(savedPlats);
+                for (var category in savedPlatsData) {
+                    if (platsDataMultiLang[currentLang] && platsDataMultiLang[currentLang][category]) {
+                        // On ajoute SEULEMENT les plats qui n'existent pas déjà
+                        savedPlatsData[category].forEach(function(plat) {
+                            if (platsDataMultiLang[currentLang][category].indexOf(plat) === -1) {
+                                platsDataMultiLang[currentLang][category].push(plat);
+                            }
+                        });
+                    }
                 }
+            } catch(e) {
+                console.warn('platsData corrompu:', e);
+                localStorage.removeItem('platsData');
             }
         }
         updateDayButtons(); updateCategoriesVisibility(); updateWeekButtons(); loadDayData(currentDay); updatePreview(); translatePage(); updateLanguageButtons(); loadYearOptions();
@@ -759,12 +753,37 @@
         if (printMonthEl && config.printMonth) printMonthEl.value = config.printMonth;
         initSelects();
     }
+
+    // ============================================================
+    // ✅ CORRECTION 2 : saveData() protégé contre le quota
+    // ============================================================
     function saveData() {
-        localStorage.setItem('menuData', JSON.stringify(menuData));
-        localStorage.setItem('menuConfig', JSON.stringify(config));
-        localStorage.setItem('menuLang', currentLang);
-        localStorage.setItem('platsData', JSON.stringify(platsDataMultiLang[currentLang]));
+        try {
+            localStorage.setItem('menuData', JSON.stringify(menuData));
+            localStorage.setItem('menuConfig', JSON.stringify(config));
+            localStorage.setItem('menuLang', currentLang);
+            // On ne sauvegarde QUE les plats ajoutés par l'utilisateur (différence avec les plats hardcodés)
+            var userPlats = {};
+            var referenceList = platsDataMultiLang.fr; // on compare toujours à la liste FR
+            for (var cat in platsDataMultiLang[currentLang]) {
+                var originaux = referenceList[cat] || [];
+                var actuels = platsDataMultiLang[currentLang][cat] || [];
+                var nouveaux = actuels.filter(function(p) {
+                    return originaux.indexOf(p) === -1;
+                });
+                if (nouveaux.length > 0) userPlats[cat] = nouveaux;
+            }
+            localStorage.setItem('platsData', JSON.stringify(userPlats));
+        } catch(e) {
+            console.error('Erreur de sauvegarde:', e);
+            // Si le quota est dépassé, on nettoie et on prévient
+            if (e.name === 'QuotaExceededError' || e.code === 22) {
+                try { localStorage.removeItem('platsData'); } catch(e2){}
+                showNotification('⚠️ Stockage saturé. Nettoyage automatique.');
+            }
+        }
     }
+
     function initSelects() {
         var categories = ['entreesChaudes', 'entreesFroides', 'plats', 'garnitures', 'patisseries'];
         categories.forEach(function(category) {
@@ -783,24 +802,31 @@
             }
         });
     }
+
+    // ============================================================
+    // ✅ CORRECTION 3 : setupEventListeners() avec flag anti-double
+    // ============================================================
+    var listenersSetup = false;
     function setupEventListeners() {
+        if (listenersSetup) return;
+        listenersSetup = true;
         document.querySelectorAll('.lang-btn').forEach(function(btn) { btn.addEventListener('click', function() { currentLang = this.dataset.lang; saveData(); translatePage(); updateLanguageButtons(); initSelects(); updatePreview(); }); });
         document.querySelectorAll('.week-btn').forEach(function(btn) { btn.addEventListener('click', function() { saveDayData(); document.querySelectorAll('.week-btn').forEach(function(b) { b.classList.remove('active'); }); this.classList.add('active'); currentWeek = parseInt(this.dataset.week); document.getElementById('current-week').textContent = currentWeek; loadDayData(currentDay); updatePreview(); }); });
         document.querySelectorAll('.generate-btn').forEach(function(btn) { btn.addEventListener('click', function() { generatePlat(this.dataset.category, parseInt(this.dataset.index)); }); });
-        document.getElementById('save-btn').addEventListener('click', function() { saveDayData(); saveData(); showNotification(translations[currentLang]['save'] + ' avec succès!'); });
-        document.getElementById('generate-day-btn').addEventListener('click', function() { generateDay(); });
-        document.getElementById('generate-week-btn').addEventListener('click', function() { generateWeek(); });
-        document.getElementById('toggle-view-btn').addEventListener('click', function() { isTableView = !isTableView; updatePreview(); this.textContent = isTableView ? 'Vue normale' : translations[currentLang]['table_preview']; });
-        document.getElementById('reset-btn').addEventListener('click', function() { resetAll(); });
-        document.getElementById('manage-plats-btn').addEventListener('click', function() { showModal('manage-plats-modal'); updatePlatList(); });
-        document.getElementById('config-btn').addEventListener('click', function() { showModal('config-modal'); loadConfig(); });
-        document.getElementById('save-config-btn').addEventListener('click', function() { saveConfig(); saveData(); showNotification(translations[currentLang]['save_configuration'] + ' avec succès!'); hideModal('config-modal'); });
+        var saveBtn = document.getElementById('save-btn'); if (saveBtn) saveBtn.addEventListener('click', function() { saveDayData(); saveData(); showNotification(translations[currentLang]['save'] + ' avec succès!'); });
+        var genDayBtn = document.getElementById('generate-day-btn'); if (genDayBtn) genDayBtn.addEventListener('click', function() { generateDay(); });
+        var genWeekBtn = document.getElementById('generate-week-btn'); if (genWeekBtn) genWeekBtn.addEventListener('click', function() { generateWeek(); });
+        var toggleBtn = document.getElementById('toggle-view-btn'); if (toggleBtn) toggleBtn.addEventListener('click', function() { isTableView = !isTableView; updatePreview(); this.textContent = isTableView ? 'Vue normale' : translations[currentLang]['table_preview']; });
+        var resetBtn = document.getElementById('reset-btn'); if (resetBtn) resetBtn.addEventListener('click', function() { resetAll(); });
+        var manageBtn = document.getElementById('manage-plats-btn'); if (manageBtn) manageBtn.addEventListener('click', function() { showModal('manage-plats-modal'); updatePlatList(); });
+        var configBtn = document.getElementById('config-btn'); if (configBtn) configBtn.addEventListener('click', function() { showModal('config-modal'); loadConfig(); });
+        var saveConfigBtn = document.getElementById('save-config-btn'); if (saveConfigBtn) saveConfigBtn.addEventListener('click', function() { saveConfig(); saveData(); showNotification(translations[currentLang]['save_configuration'] + ' avec succès!'); hideModal('config-modal'); });
         document.querySelectorAll('.close-btn').forEach(function(btn) { btn.addEventListener('click', function() { hideModal(this.dataset.modal); }); });
-        document.getElementById('add-plat-btn').addEventListener('click', function() { addPlat(); });
-        document.getElementById('paste-plats-btn').addEventListener('click', function() { pastePlats(); });
-        document.getElementById('plat-category-select').addEventListener('change', function() { updatePlatList(); });
-        document.getElementById('export-backup-btn').addEventListener('click', exportBackup);
-        document.getElementById('import-backup-btn').addEventListener('click', importBackup);
+        var addPlatBtn = document.getElementById('add-plat-btn'); if (addPlatBtn) addPlatBtn.addEventListener('click', function() { addPlat(); });
+        var pasteBtn = document.getElementById('paste-plats-btn'); if (pasteBtn) pasteBtn.addEventListener('click', function() { pastePlats(); });
+        var catSelect = document.getElementById('plat-category-select'); if (catSelect) catSelect.addEventListener('change', function() { updatePlatList(); });
+        var exportBtn = document.getElementById('export-backup-btn'); if (exportBtn) exportBtn.addEventListener('click', exportBackup);
+        var importBtn = document.getElementById('import-backup-btn'); if (importBtn) importBtn.addEventListener('click', importBackup);
         var printBtn = document.getElementById('print-btn');
         if (printBtn) {
             printBtn.addEventListener('click', function() {
@@ -811,14 +837,25 @@
             });
         }
         var confirmPrintBtn = document.getElementById('confirm-print-btn');
-        if (confirmPrintBtn) { confirmPrintBtn.addEventListener('click', function() { printMenu(); document.getElementById('print-size-selector').classList.remove('visible'); this.style.display = 'none'; }); }
+        if (confirmPrintBtn) { confirmPrintBtn.addEventListener('click', function() { printMenu(); var sel = document.getElementById('print-size-selector'); if (sel) sel.classList.remove('visible'); this.style.display = 'none'; }); }
         document.querySelectorAll('input[name="print-size"]').forEach(function(radio) { radio.addEventListener('change', function() { var customConfig = document.getElementById('custom-print-config'); if (this.value === 'CUSTOM') { customConfig.classList.add('visible'); customConfig.style.display = 'block'; } else { customConfig.classList.remove('visible'); customConfig.style.display = 'none'; } }); });
         setupContextMenu();
         var printMonthEl = document.getElementById('print-month');
         if (printMonthEl) { printMonthEl.addEventListener('change', function() { config.printMonth = parseInt(this.value); saveData(); }); }
         var printYearEl = document.getElementById('print-year');
         if (printYearEl) { printYearEl.addEventListener('change', function() { config.printYear = parseInt(this.value); saveData(); }); }
+        // ✅ NOUVEAU : bouton de nettoyage d'urgence
+        var clearBtn = document.getElementById('clear-storage-btn');
+        if (clearBtn) {
+            clearBtn.addEventListener('click', function() {
+                if (confirm('Effacer toutes les données locales ? Cette action est irréversible.')) {
+                    localStorage.clear();
+                    location.reload();
+                }
+            });
+        }
     }
+
     function translatePage() {
         document.querySelectorAll('[data-translate]').forEach(function(element) {
             var key = element.getAttribute('data-translate');
@@ -1158,26 +1195,34 @@
         input.onchange = function() { var reader = new FileReader(); reader.onload = function(e) { try { var data = JSON.parse(e.target.result); if (data.menu) { for (var w = 1; w <= 5; w++) { if (data.menu[w]) menuData[w] = data.menu[w]; } } if (data.plats) { for (var lang in data.plats) { if (platsDataMultiLang[lang]) { for (var cat in data.plats[lang]) { if (platsDataMultiLang[lang][cat]) { platsDataMultiLang[lang][cat] = data.plats[lang][cat]; } } } } } if (data.config) config = data.config; if (data.lang) currentLang = data.lang; saveData(); initSelects(); updateDayButtons(); updateCategoriesVisibility(); updateWeekButtons(); loadDayData(currentDay); updatePreview(); translatePage(); updateLanguageButtons(); showNotification('Données restaurées !'); } catch(err) { alert('Fichier invalide'); } }; reader.readAsText(input.files[0]); };
         input.click();
     }
-    function init() { loadData(); initSelects(); setupEventListeners(); updatePreview(); }
 
     // ============================================================
-    // 🚀 LANCEMENT AUTOMATIQUE - Version corrigée
+    // ✅ CORRECTION 4 : init() avec flag anti-double exécution
     // ============================================================
-    // La page de licence reste affichée par défaut.
-    // Elle n'est masquée que si une licence valide est stockée,
-    // ou après un clic sur "Continuer avec la version gratuite".
+    var initDone = false;
+    function init() {
+        if (initDone) return;
+        initDone = true;
+        loadData();
+        initSelects();
+        setupEventListeners();
+        updatePreview();
+    }
+
+    // ============================================================
+    // 🚀 LANCEMENT AUTOMATIQUE
+    // ============================================================
     document.addEventListener('DOMContentLoaded', function() {
         var token = localStorage.getItem('menuLicenseToken') || localStorage.getItem('menuLicenseKey');
         if (token) {
             var payload = mpVerifyLicenseToken(token);
             if (payload && activateLicensePayload(payload, token)) {
-                return; // Licence valide : l'app s'affiche directement
+                return;
             } else {
                 localStorage.removeItem('menuLicenseToken');
                 localStorage.removeItem('menuLicenseKey');
             }
         }
-        // Sinon : on ne fait rien, la page de licence reste visible par défaut.
     });
 </script>
 </body>
