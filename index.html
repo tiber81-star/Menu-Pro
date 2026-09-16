@@ -464,5 +464,96 @@ Les autres logiciels sont pleins de fonctions inutiles. MenuPro fait une seule c
 })();
 </script>
 
+<!-- ==================== TRACKING GA4 — AJOUT ==================== -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof gtag !== 'function') return;
+
+  function track(name, params) {
+    gtag('event', name, Object.assign({
+      page_language: document.documentElement.lang || 'unknown'
+    }, params || {}));
+  }
+
+  // 1. Vue de la page
+  track('view_hero');
+
+  // 2. Clics sur "Ouvrir le créateur" / "Créer mon premier menu" / etc.
+  document.querySelectorAll('a[href*="MenuPro.html"]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var where = el.closest('.hero')           ? 'hero'
+                : el.closest('.final-cta')      ? 'final'
+                : el.closest('.pricing-card')   ? 'pricing'
+                : el.closest('#sticky-cta')     ? 'sticky'
+                : 'mid';
+      track('click_cta_' + where, { cta_text: (el.textContent || '').trim().slice(0, 40) });
+    });
+  });
+
+  // 3. Clics sur "Acheter maintenant" (Stripe)
+  document.querySelectorAll('a[href*="buy.stripe.com"]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var where = el.closest('.pricing-card') ? 'pricing'
+                : el.closest('.final-cta')    ? 'final'
+                : 'other';
+      track('click_buy_stripe', { position: where, value: 79, currency: 'EUR' });
+    });
+  });
+
+  // 4. Clics sur les boutons de langue
+  document.querySelectorAll('.lang-btn').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (!el.classList.contains('active')) {
+        track('click_lang_' + (el.textContent || '').trim().toLowerCase());
+      }
+    });
+  });
+
+  // 5. Clics sur les boutons de partage
+  document.querySelectorAll('.share-btn').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var net = el.classList.contains('share-tw') ? 'twitter'
+              : el.classList.contains('share-fb') ? 'facebook'
+              : el.classList.contains('share-li') ? 'linkedin'
+              : 'other';
+      track('click_share_' + net);
+    });
+  });
+
+  // 6. Clics sur les questions FAQ
+  document.querySelectorAll('.faq-item').forEach(function (el, i) {
+    el.addEventListener('click', function () {
+      var q = el.querySelector('h3');
+      track('click_faq', { question: q ? q.textContent.trim().slice(0, 80) : ('q' + i) });
+    });
+  });
+
+  // 7. Scroll à 75 %
+  var scrolled75 = false;
+  window.addEventListener('scroll', function () {
+    if (scrolled75) return;
+    var pct = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
+    if (pct >= 75) { scrolled75 = true; track('scroll_75'); }
+  });
+
+  // 8. Vue de la section tarifs
+  var pricing = document.querySelector('.pricing-section');
+  if (pricing && 'IntersectionObserver' in window) {
+    var seen = false;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && !seen) {
+          seen = true;
+          track('click_price_view');
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.4 });
+    io.observe(pricing);
+  }
+});
+</script>
+<!-- ==================== FIN TRACKING GA4 ==================== -->
+
 </body>
 </html>
