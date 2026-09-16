@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MenuPro — Écrivez vos menus en un clic. Pas en une soirée.</title>
-<meta name="description" content="MenuPro fait une seule chose, parfaitement : générer vos menus de restaurant instantanément. Recette en un clic, 6 pictogrammes, impression A4/A5/A3. Sans compte, 100% local. Licence 79 €.">
+<title>MenuPro — Générez votre menu en 2 minutes. Pas en une soirée.</title>
+<meta name="description" content="MenuPro génère votre menu de restaurant complet en 2 minutes. Voyez l'équilibre de vos viandes d'un coup d'œil. Sachez à l'avance quoi commander et préparer. Sans compte, 100% local.">
 <meta name="keywords" content="créateur de menus, logiciel menu restaurant, générateur de menus, menu du jour, planificateur de menus, créer menu restaurant, pictogrammes, menu maker, logiciel menu cantine">
 <meta name="author" content="Sébastien Berthy">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -13,16 +13,16 @@
 <link rel="icon" type="image/webp" id="favicon-link">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://menupro2.com/">
-<meta property="og:title" content="MenuPro — Écrivez vos menus en un clic">
-<meta property="og:description" content="Un clic. Un menu. Pas une soirée. Recette en un clic, 6 pictogrammes, impression A4/A5/A3, 100% local, sans compte.">
+<meta property="og:title" content="MenuPro — Générez votre menu en 2 minutes">
+<meta property="og:description" content="Arrêtez de perdre 2 heures par semaine sur vos menus. MenuPro les génère en 2 minutes.">
 <meta property="og:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="MenuPro">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MenuPro — Écrivez vos menus en un clic">
-<meta name="twitter:description" content="Un clic. Un menu. Pas une soirée.">
+<meta name="twitter:title" content="MenuPro — Générez votre menu en 2 minutes">
+<meta name="twitter:description" content="Arrêtez de perdre 2 heures par semaine sur vos menus.">
 <meta name="twitter:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
 <link rel="canonical" href="https://menupro2.com/">
 <link rel="alternate" hreflang="fr" href="https://menupro2.com/">
@@ -42,7 +42,7 @@
 <link rel="alternate" hreflang="x-default" href="https://menupro2.com/index-en.html">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, Windows, macOS","description":"MenuPro est un créateur de menus conçu par un chef. Génération instantanée, recette en un clic, 6 pictogrammes, impression A4/A5/A3, 100% local.","url":"https://menupro2.com/","image":"https://menupro2.com/capture2-menu-semaine-pictogrammes.png","author":{"@type":"Person","name":"Sébastien Berthy","jobTitle":"Cuisinier"},"offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, Windows, macOS","description":"MenuPro génère votre menu de restaurant en 2 minutes. 100% local, sans compte.","url":"https://menupro2.com/","image":"https://menupro2.com/capture2-menu-semaine-pictogrammes.png","author":{"@type":"Person","name":"Sébastien Berthy","jobTitle":"Cuisinier"},"offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Product","name":"MenuPro","description":"Générateur de menus de restaurant en un clic.","offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"},"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Sébastien Berthy"},"reviewBody":"MenuPro me fait gagner des heures chaque semaine. Un clic, un menu, c'est prêt."}}
@@ -61,17 +61,29 @@ body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;colo
 .lang-nav{text-align:right;padding:12px 24px;background:#2c3e50}
 .lang-btn{color:white;text-decoration:none;margin-left:18px;font-weight:600;font-size:.95rem}
 .lang-btn:hover,.lang-btn.active{color:#1abc9c}
-.hero{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.78)),url('capture2-menu-semaine-pictogrammes.png');background-size:cover;background-position:center;color:white;padding:90px 20px 70px;text-align:center}
-.hero h1{font-size:2.6rem;margin:0 0 20px;font-weight:800;line-height:1.2;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
-.hero h1 img{width:60px;height:60px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.hero .subtitle{font-size:1.2rem;margin-bottom:20px;max-width:820px;margin-left:auto;margin-right:auto;opacity:.97}
+
+/* ============ HERO REFONDU ============ */
+.hero{background:linear-gradient(rgba(20,30,48,.96),rgba(20,30,48,.96)),url('capture2-menu-semaine-pictogrammes.png');background-size:cover;background-position:center;color:white;padding:70px 20px 40px;text-align:center}
+.hero-logo{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:24px;font-size:1.4rem;font-weight:700;letter-spacing:.5px}
+.hero-logo img{width:48px;height:48px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+.hero .badge-hero{display:inline-block;background:rgba(230,126,34,.95);padding:6px 18px;border-radius:30px;font-size:.85rem;font-weight:600;margin-bottom:24px}
+.hero-title{font-size:2.8rem;font-weight:800;line-height:1.15;margin:0 auto 20px;max-width:900px;letter-spacing:-0.5px;text-shadow:0 4px 24px rgba(0,0,0,.7)}
+.hero-title .highlight{color:#ffd166;display:inline-block}
+.hero .subtitle{font-size:1.15rem;margin:0 auto 30px;max-width:720px;opacity:.95;line-height:1.6}
 .hero .subtitle strong{color:#ffd166}
-.hero .badge-hero{display:inline-block;background:rgba(230,126,34,.95);padding:6px 18px;border-radius:30px;font-size:.9rem;font-weight:600;margin-bottom:20px}
-.cta-btn{background:#27ae60;color:white;padding:18px 44px;text-decoration:none;border-radius:50px;font-weight:700;font-size:1.15rem;transition:all .3s;box-shadow:0 6px 20px rgba(39,174,96,.4);display:inline-block;border:none;cursor:pointer}
-.cta-btn:hover{background:#219a52;transform:translateY(-3px);box-shadow:0 10px 25px rgba(39,174,96,.5)}
+.cta-btn{background:#27ae60;color:white;padding:18px 44px;text-decoration:none;border-radius:50px;font-weight:700;font-size:1.15rem;transition:all .3s;box-shadow:0 6px 20px rgba(39,174,96,.5);display:inline-block;border:none;cursor:pointer}
+.cta-btn:hover{background:#219a52;transform:translateY(-3px);box-shadow:0 10px 25px rgba(39,174,96,.6)}
 .cta-btn.secondary{background:transparent;border:2px solid white;box-shadow:none}
 .cta-btn.secondary:hover{background:white;color:#2c3e50}
-.hero small{display:block;margin-top:18px;opacity:.9;font-size:.9rem}
+.hero small{display:block;margin-top:16px;opacity:.85;font-size:.9rem}
+
+/* Preuve visuelle dans le hero */
+.hero-proof{max-width:820px;margin:40px auto 0;position:relative}
+.hero-proof-caption{color:#ffd166;font-weight:600;font-size:.95rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.hero-proof img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.1)}
+.hero-proof-note{color:rgba(255,255,255,.7);font-size:.9rem;margin-top:14px;font-style:italic}
+
+/* ============ SUITE DE LA PAGE ============ */
 .trust-bar{background:#2c3e50;color:white;padding:18px 20px;display:flex;justify-content:center;flex-wrap:wrap;gap:30px;font-size:.9rem}
 .trust-bar span{display:flex;align-items:center;gap:8px}
 .container{max-width:1140px;margin:0 auto;padding:70px 20px}
@@ -113,7 +125,7 @@ body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;colo
 .compare-card ul{list-style:none;padding:0;margin:0}
 .compare-card ul li{padding:8px 0;font-size:.98rem}
 .mockup{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.12);border:1px solid #e5e5e5;max-width:900px;margin:0 auto 20px}
-.mockup img{width:100%;display:block}
+.mockup img{width:100%;height:auto;display:block}
 .caption{text-align:center;font-size:.95rem;color:#666;margin-bottom:50px}
 .picto-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:18px;max-width:800px;margin:0 auto}
 .picto-box{background:white;padding:22px;border-radius:14px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.06)}
@@ -157,10 +169,13 @@ footer .small{font-size:.8rem;opacity:.7}
 footer a{color:#1abc9c;text-decoration:none;margin:0 8px}
 #sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#27ae60;color:white;text-align:center;padding:14px;box-shadow:0 -4px 15px rgba(0,0,0,.2);z-index:100}
 #sticky-cta a{color:white;text-decoration:none;font-weight:700}
+
 @media(max-width:720px){
-.hero h1{font-size:1.7rem}
-.hero h1 img{width:44px;height:44px}
+.hero{padding:50px 16px 30px}
+.hero-title{font-size:1.9rem}
 .hero .subtitle{font-size:1.05rem}
+.hero-logo{font-size:1.2rem}
+.hero-logo img{width:40px;height:40px}
 .section-title{font-size:1.7rem}
 .two-col,.compare-grid{grid-template-columns:1fr}
 .cta-btn{padding:16px 32px;font-size:1.05rem}
@@ -186,13 +201,20 @@ footer a{color:#1abc9c;text-decoration:none;margin:0 8px}
 <a href="index-es.html" class="lang-btn">ES</a>
 </nav>
 
+<!-- ============ HERO REFONDU — OPTION C ============ -->
 <header class="hero">
+<div class="hero-logo"><img id="logo-header" alt="Logo MenuPro"> MenuPro</div>
 <span class="badge-hero">⚡ Fait par un chef. Pour les chefs.</span>
-<h1><img id="logo-header" alt="Logo MenuPro"> MenuPro</h1>
-<p class="subtitle"><strong>Écrivez vos menus en un clic. Pas en une soirée.</strong><br>
-Les autres logiciels sont pleins de fonctions inutiles. MenuPro n'est pas un logiciel de gestion — c'est <strong>l'outil du chef qui prépare sa semaine en 2 minutes</strong>. Vous générez votre menu complet, vous voyez d'un coup d'œil l'équilibre de vos viandes, vous savez quoi commander et préparer.</p>
+<h1 class="hero-title">Arrêtez de perdre <span class="highlight">2 heures par semaine</span> sur vos menus.</h1>
+<p class="subtitle">MenuPro génère votre menu complet en <strong>2 minutes</strong>. Vous voyez d'un coup d'œil si vos viandes sont équilibrées. Vous savez à l'avance <strong>quoi commander et quoi préparer</strong>.</p>
 <a href="/MenuPro.html" target="_blank" rel="noopener noreferrer" class="cta-btn">🚀 Créer mon premier menu</a>
 <br><small>Sans compte · Sans internet · Sans carte bancaire</small>
+
+<div class="hero-proof">
+<p class="hero-proof-caption">↓ Voilà ce que vous obtenez en 2 minutes ↓</p>
+<img src="capture2-menu-semaine-pictogrammes.png" alt="Exemple de menu généré par MenuPro">
+<p class="hero-proof-note">Menu complet avec pictogrammes et liens vers les recettes</p>
+</div>
 </header>
 
 <div class="trust-bar">
@@ -450,13 +472,11 @@ Les autres logiciels sont pleins de fonctions inutiles. MenuPro n'est pas un log
 
 <script>
 (function(){
-  // Logo base64
   var LOGO_B64 = "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";
   var uri = "data:image/webp;base64," + LOGO_B64;
   var fav = document.getElementById('favicon-link'); if (fav) fav.href = uri;
   var logo = document.getElementById('logo-header'); if (logo) logo.src = uri;
 
-  // Sticky CTA mobile
   if (window.innerWidth <= 768) {
     var cta = document.getElementById('sticky-cta');
     var update = function(){ cta.style.display = window.scrollY > 600 ? 'block' : 'none'; };
