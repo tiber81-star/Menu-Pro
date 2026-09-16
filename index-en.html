@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MenuPro — Write your menus in one click. Not in one evening.</title>
-<meta name="description" content="MenuPro does one thing, perfectly: generate your restaurant menus instantly. One-click recipe, 6 pictograms, A4/A5/A3 printing. No account, 100% local. €79 lifetime license.">
+<title>MenuPro — Generate your menu in 2 minutes. Not in one evening.</title>
+<meta name="description" content="MenuPro generates your complete restaurant menu in 2 minutes. See at a glance if your meats are balanced. Know in advance what to order and prepare. No account, 100% local.">
 <meta name="keywords" content="menu maker, restaurant menu generator, weekly menu planner, menu creation tool, daily specials planner, restaurant menu software, food menu generator, menu planning app, dietary pictograms">
 <meta name="author" content="Sébastien Berthy">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -13,8 +13,8 @@
 <link rel="icon" type="image/webp" id="favicon-link">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://menupro2.com/index-en.html">
-<meta property="og:title" content="MenuPro — Write your menus in one click">
-<meta property="og:description" content="One click. One menu. Not one evening. One-click recipe, 6 pictograms, A4/A5/A3 printing, 100% local, no account.">
+<meta property="og:title" content="MenuPro — Generate your menu in 2 minutes">
+<meta property="og:description" content="Stop losing 2 hours per week on your menus. MenuPro generates them in 2 minutes.">
 <meta property="og:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -22,8 +22,8 @@
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:site_name" content="MenuPro">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MenuPro — Write your menus in one click">
-<meta name="twitter:description" content="One click. One menu. Not one evening.">
+<meta name="twitter:title" content="MenuPro — Generate your menu in 2 minutes">
+<meta name="twitter:description" content="Stop losing 2 hours per week on your menus.">
 <meta name="twitter:image" content="https://menupro2.com/capture2-menu-semaine-pictogrammes.png">
 <link rel="canonical" href="https://menupro2.com/index-en.html">
 <link rel="alternate" hreflang="fr" href="https://menupro2.com/">
@@ -43,7 +43,7 @@
 <link rel="alternate" hreflang="x-default" href="https://menupro2.com/index-en.html">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, Windows, macOS","description":"MenuPro is a menu maker built by a chef. Instant generation, one-click recipe, 6 pictograms, A4/A5/A3 printing, 100% local.","url":"https://menupro2.com/index-en.html","image":"https://menupro2.com/capture2-menu-semaine-pictogrammes.png","author":{"@type":"Person","name":"Sébastien Berthy","jobTitle":"Chef"},"offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, Windows, macOS","description":"MenuPro generates your restaurant menu in 2 minutes. 100% local, no account.","url":"https://menupro2.com/index-en.html","image":"https://menupro2.com/capture2-menu-semaine-pictogrammes.png","author":{"@type":"Person","name":"Sébastien Berthy","jobTitle":"Chef"},"offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Product","name":"MenuPro","description":"Restaurant menu generator in one click.","offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"},"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Sébastien Berthy"},"reviewBody":"MenuPro saves me hours every week. One click, one menu, done."}}
@@ -62,17 +62,29 @@ body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;colo
 .lang-nav{text-align:right;padding:12px 24px;background:#2c3e50}
 .lang-btn{color:white;text-decoration:none;margin-left:18px;font-weight:600;font-size:.95rem}
 .lang-btn:hover,.lang-btn.active{color:#1abc9c}
-.hero{background:linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.78)),url('capture2-menu-semaine-pictogrammes.png');background-size:cover;background-position:center;color:white;padding:90px 20px 70px;text-align:center}
-.hero h1{font-size:2.6rem;margin:0 0 20px;font-weight:800;line-height:1.2;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
-.hero h1 img{width:60px;height:60px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.hero .subtitle{font-size:1.2rem;margin-bottom:20px;max-width:820px;margin-left:auto;margin-right:auto;opacity:.97}
+
+/* ============ HERO REFONDU ============ */
+.hero{background:linear-gradient(rgba(20,30,48,.96),rgba(20,30,48,.96)),url('capture2-menu-semaine-pictogrammes.png');background-size:cover;background-position:center;color:white;padding:70px 20px 40px;text-align:center}
+.hero-logo{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:24px;font-size:1.4rem;font-weight:700;letter-spacing:.5px}
+.hero-logo img{width:48px;height:48px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+.hero .badge-hero{display:inline-block;background:rgba(230,126,34,.95);padding:6px 18px;border-radius:30px;font-size:.85rem;font-weight:600;margin-bottom:24px}
+.hero-title{font-size:2.8rem;font-weight:800;line-height:1.15;margin:0 auto 20px;max-width:900px;letter-spacing:-0.5px;text-shadow:0 4px 24px rgba(0,0,0,.7)}
+.hero-title .highlight{color:#ffd166;display:inline-block}
+.hero .subtitle{font-size:1.15rem;margin:0 auto 30px;max-width:720px;opacity:.95;line-height:1.6}
 .hero .subtitle strong{color:#ffd166}
-.hero .badge-hero{display:inline-block;background:rgba(230,126,34,.95);padding:6px 18px;border-radius:30px;font-size:.9rem;font-weight:600;margin-bottom:20px}
-.cta-btn{background:#27ae60;color:white;padding:18px 44px;text-decoration:none;border-radius:50px;font-weight:700;font-size:1.15rem;transition:all .3s;box-shadow:0 6px 20px rgba(39,174,96,.4);display:inline-block;border:none;cursor:pointer}
-.cta-btn:hover{background:#219a52;transform:translateY(-3px);box-shadow:0 10px 25px rgba(39,174,96,.5)}
+.cta-btn{background:#27ae60;color:white;padding:18px 44px;text-decoration:none;border-radius:50px;font-weight:700;font-size:1.15rem;transition:all .3s;box-shadow:0 6px 20px rgba(39,174,96,.5);display:inline-block;border:none;cursor:pointer}
+.cta-btn:hover{background:#219a52;transform:translateY(-3px);box-shadow:0 10px 25px rgba(39,174,96,.6)}
 .cta-btn.secondary{background:transparent;border:2px solid white;box-shadow:none}
 .cta-btn.secondary:hover{background:white;color:#2c3e50}
-.hero small{display:block;margin-top:18px;opacity:.9;font-size:.9rem}
+.hero small{display:block;margin-top:16px;opacity:.85;font-size:.9rem}
+
+/* Preuve visuelle dans le hero */
+.hero-proof{max-width:820px;margin:40px auto 0;position:relative}
+.hero-proof-caption{color:#ffd166;font-weight:600;font-size:.95rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+.hero-proof img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.1)}
+.hero-proof-note{color:rgba(255,255,255,.7);font-size:.9rem;margin-top:14px;font-style:italic}
+
+/* ============ SUITE DE LA PAGE ============ */
 .trust-bar{background:#2c3e50;color:white;padding:18px 20px;display:flex;justify-content:center;flex-wrap:wrap;gap:30px;font-size:.9rem}
 .trust-bar span{display:flex;align-items:center;gap:8px}
 .container{max-width:1140px;margin:0 auto;padding:70px 20px}
@@ -114,7 +126,7 @@ body{font-family:'Poppins',sans-serif;margin:0;padding:0;background:#f8f9fa;colo
 .compare-card ul{list-style:none;padding:0;margin:0}
 .compare-card ul li{padding:8px 0;font-size:.98rem}
 .mockup{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.12);border:1px solid #e5e5e5;max-width:900px;margin:0 auto 20px}
-.mockup img{width:100%;display:block}
+.mockup img{width:100%;height:auto;display:block}
 .caption{text-align:center;font-size:.95rem;color:#666;margin-bottom:50px}
 .picto-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:18px;max-width:800px;margin:0 auto}
 .picto-box{background:white;padding:22px;border-radius:14px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.06)}
@@ -158,10 +170,13 @@ footer .small{font-size:.8rem;opacity:.7}
 footer a{color:#1abc9c;text-decoration:none;margin:0 8px}
 #sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#27ae60;color:white;text-align:center;padding:14px;box-shadow:0 -4px 15px rgba(0,0,0,.2);z-index:100}
 #sticky-cta a{color:white;text-decoration:none;font-weight:700}
+
 @media(max-width:720px){
-.hero h1{font-size:1.7rem}
-.hero h1 img{width:44px;height:44px}
+.hero{padding:50px 16px 30px}
+.hero-title{font-size:1.9rem}
 .hero .subtitle{font-size:1.05rem}
+.hero-logo{font-size:1.2rem}
+.hero-logo img{width:40px;height:40px}
 .section-title{font-size:1.7rem}
 .two-col,.compare-grid{grid-template-columns:1fr}
 .cta-btn{padding:16px 32px;font-size:1.05rem}
@@ -187,13 +202,20 @@ footer a{color:#1abc9c;text-decoration:none;margin:0 8px}
 <a href="index-es.html" class="lang-btn">ES</a>
 </nav>
 
+<!-- ============ HERO REFONDU — OPTION C ============ -->
 <header class="hero">
+<div class="hero-logo"><img id="logo-header" alt="MenuPro logo"> MenuPro</div>
 <span class="badge-hero">⚡ Built by a chef. For chefs.</span>
-<h1><img id="logo-header" alt="MenuPro logo"> MenuPro</h1>
-<p class="subtitle"><strong>Write your menus in one click. Not in one evening.</strong><br>
-Other software is packed with features you'll never use. MenuPro isn't management software — it's <strong>the chef's tool that prepares the whole week in 2 minutes</strong>. Generate your full menu, see at a glance if your meats are balanced, and know exactly what to order and prepare.</p>
+<h1 class="hero-title">Stop losing <span class="highlight">2 hours a week</span> on your menus.</h1>
+<p class="subtitle">MenuPro generates your full menu in <strong>2 minutes</strong>. You see at a glance if your meats are balanced. You know in advance <strong>what to order and what to prepare</strong>.</p>
 <a href="/MenuPro.html" target="_blank" rel="noopener noreferrer" class="cta-btn">🚀 Create my first menu</a>
 <br><small>No account · No internet · No credit card</small>
+
+<div class="hero-proof">
+<p class="hero-proof-caption">↓ Here's what you get in 2 minutes ↓</p>
+<img src="capture2-menu-semaine-pictogrammes.png" alt="Sample menu generated by MenuPro">
+<p class="hero-proof-note">Full menu with pictograms and links to recipes</p>
+</div>
 </header>
 
 <div class="trust-bar">
