@@ -20,6 +20,17 @@
     <meta name="twitter:description" content="Créez vos menus hebdomadaires professionnels en quelques clics.">
     <meta name="theme-color" content="#2c3e50">
     <link rel="icon" type="image/webp" id="favicon-link">
+    <!-- Google tag (gtag.js) - Tracking MenuPro app -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQNKBXS2MM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HQNKBXS2MM', {
+        page_title: 'MenuPro App',
+        page_location: 'https://menupro2.com/MenuPro.html'
+      });
+    </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Générateur de menus professionnels pour restaurants. Créé par un chef pour les chefs.","url":"https://menupro2.com/","offers":{"@type":"Offer","price":"79","priceCurrency":"EUR","availability":"https://schema.org/InStock"}}
     </script>
@@ -556,8 +567,15 @@
         var importBtn=document.getElementById('import-backup-btn');if(importBtn){importBtn.classList.add('disabled');importBtn.style.cursor='not-allowed';importBtn.style.opacity='0.6';importBtn.title='Version gratuite';}
         updateCategoriesVisibility();
     }
-    function startDemo(){document.getElementById('license-page').style.display='none';document.getElementById('app-content').style.display='block';enableDemoVersion();if(typeof init==='function')init();}
+    function startDemo(){
+        if (typeof mpTrack === 'function') mpTrack('menupro_demo_started');
+        document.getElementById('license-page').style.display='none';
+        document.getElementById('app-content').style.display='block';
+        enableDemoVersion();
+        if(typeof init==='function')init();
+    }
     function activateLicensePayload(payload, token){
+        if (typeof mpTrack === 'function') mpTrack('menupro_license_activated');
         var exp=mpExpiry(payload); if(exp && new Date()>=exp){return false;}
         localStorage.setItem('menuLicenseToken',token); localStorage.setItem('menuLicenseKey',token);
         document.getElementById('license-page').style.display='none'; document.getElementById('app-content').style.display='block'; enableFullVersion(); if(typeof init==='function')init();
@@ -580,6 +598,25 @@
         'lundi': 'monday', 'mardi': 'tuesday', 'mercredi': 'wednesday', 'jeudi': 'thursday',
         'vendredi': 'friday', 'samedi': 'saturday', 'dimanche': 'sunday'
     };
+
+    // ============================================================
+    // 📊 TRACKING GA4 - Suivi de l'utilisation de l'app
+    // ============================================================
+    function mpTrack(eventName, params) {
+        try {
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, Object.assign({
+                    app_name: 'MenuPro',
+                    app_version: '1.0'
+                }, params || {}));
+            }
+        } catch(e) { console.warn('Tracking error:', e); }
+    }
+
+    // Signale l'ouverture de l'app
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() { mpTrack('menupro_opened'); }, 500);
+    });
 
     // ============================================================
     // LISTE FRANÇAISE COMPLÈTE (avec nouveaux plats du PDF, sans doublons)
@@ -606,6 +643,23 @@
             "Abricots 🍑","Abricots au sirop 🍑","Abricots aux amandes 🍑","Abricots aux marrons 🍑","Acropolis au chocolat 🍫","Ananas à la mousse chocolat 🍍","Ananas frais 🍍","Apple crumble 🍎","Baba à la chantilly 🍰","Banane 🍌","Banane au citron 🍌","Banane martiniquaise 🍌","Bavarois à la pêche 🍑","Bavarois aux fraises sauce chocolat 🍓","Bavarois cappuccino sauce pistache ☕","Bavarois rubané 🍰","Beignets aux pommes 🍩","Beignets d'ananas 🍩","Bouchée crème pâtissière 🥧","Boule de neige chocolat 🍫","Brownies de Virginie 🍫","Bûche au cappuccino ☕","Bûche au chocolat 🍫","Bûche au Grand Marnier 🍊","Bûche au marron 🌰","Bûche aux fruits rouges 🍓","Bûche de Noël à l'orange 🍊","Cake aux fruits des santons 🍰","Cassate aux fruits confits 🍰","Cerises 🍒","Chantilly à la framboise 🍇","Charlotte aux fruits 🍓","Charlotte deux chocolats 🍫","Charlotte mousse praline 🌰","Chocolat brésilien 🍫","Chou à la crème 🍩","Chou à la mousse smarties 🍩","Chou au café ☕","Chou au chocolat 🍫","Chou au chocolat blanc 🍫","Chou chantilly 🍩","Chou chantilly sauce fraise 🍓","Chou chiboust 🍩","Chou surprise 🍩","Choux saint-honoré 🍩","Clafoutis aux pêches 🍑","Clafoutis aux poires 🍐","Clafoutis aux pommes 🍎","Clafoutis aux quetsches 🍑","Clafoutis fruits rouges 🍓","Clémentine 🍊","Cocktail aux abricots 🍑","Cocktail d'agrumes 🍊","Cocktail délice 🍹","Cocktail Florida 🍹","Cocktail masque 🍹","Cocon de mousse blanche 🥥","Compote d'abricots 🍑","Compote de pêches 🍑","Compote de pommes 🍎","Compote tous fruits 🍎","Coupe bicolore 🍨","Coupe californienne 🍨","Coupe cévenole 🍨","Coupe d'ananas et chantilly 🍍","Coupe d'ananas et fruits 🍍","Coupe tropicale 🍹","Coupe tutti frutti 🍨","Coupelle Belle Hélène 🍐","Crème à la mousse coco 🥥","Crème à la sauce caramel 🍮","Crème à la vanille 🍦","Crème à l'ananas 🍍","Crème anglaise au biscuit 🍮","Crème anglaise aux pruneaux 🍮","Crème anglaise créole 🍮","Crème au caramel 🍮","Crème au citron 🍋","Crème au Grand Marnier 🍊","Crème aux amandes 🌰","Crème aux fruits 🍓","Crème aux œufs 🍮","Crème aux pêches 🍑","Crème aux pommes 🍎","Crème brésilienne 🍮","Crème brûlée à l'abricot 🍑","Crème brûlée à l'orange 🍊","Crème brûlée en habit rouge 🍮","Crème chabrillan 🍮","Crème choco-vanille 🍫","Crème de marron chantilly 🌰","Crème dessert aux poires 🍐","Crème dessert chocolat au pralin 🍫","Crème fréneuse 🍮","Crème pâtissière et amandes caramélisées 🌰","Crème pralinée aux biscuits 🌰","Crème renversée aux amandes 🌰","Crème renversée aux pommes 🍎","Crème vanille aux fraises 🍓","Crème vanille aux fruits 🍦","Crème vanille plombière 🍦","Crêpe au chocolat 🍫","Crêpe au sucre 🥞","Dacquoise au café ☕","Délice aux framboises 🍇","Délicieux praliné 🌰","Dessert du dragon 🐉","Douceur au chocolat 🍫","Duo d'entremets 🍰","Éclair au chocolat blanc 🍫","Éclair de mousse choco 🍫","Éclair noisette 🌰","Entremets à l'ancienne 🍰","Entremets à la liégeoise 🍰","Entremets à la mousse noire 🍫","Entremets allégé citron 🍋","Entremets au pain d'épices 🍞","Entremets aux amandes 🌰","Entremets aux fruits 🍓","Entremets aux kiwis 🥝","Entremets chocolat 🍫","Entremets chocolat oranges confites 🍫","Entremets de Bourgogne 🍰","Entremets grand marnier 🍊","Entremets mokambo ☕","Entremets praliné aux noisettes 🌰","Entremets yin yang 🍰","Feuillantine à la mousse au chocolat 🍫","Feuillantine de fraises à la mousse choc 🍓","Feuilleté à la crème de marrons 🌰","Feuilleté albigeois 🥐","Feuilleté aux fruits 🍎","Feuilleté aux poires 🍐","Feuilleté aux pommes 🍎","Flan à l'orange 🍊","Flan à la gitane 🍮","Flan à la noix de coco 🥥","Flan abricot aux myrtilles 🍑","Flan abricot et pistache 🍑","Flan abricot sec chocolat 🍫","Flan au chocolat 🍫","Flan au citron 🍋","Flan aux amandes 🌰","Flan de la jungle 🍮","Flan de poires à la Bourdaloue 🍐","Flan pâtissier agenais 🍮","Flan vanille caramélisé 🍮","Flan vanille et poire 🍐","Flaugnarde aux kiwis 🥝","Fraîcheur d'Armorique 🍓","Fraises au sucre 🍓","Fraisier 🍓","Framboisier 🍇","Fromage blanc à la crème 🥛","Fromage blanc agenais 🥛","Fromage blanc au chocolat 🍫","Fromage blanc et framboises 🍇","Fruits en robe exotique 🍍","Galette au sucre 🍬","Gâteau à l'orange 🍊","Gâteau à la noix de coco 🥥","Gâteau caraque 🍰","Gâteau creusois 🍰","Gâteau des îles 🏝️","Gâteau marbré (2) 🍫","Gâteau normand 🍎","Gâteau opéra ☕","Gâteau sauce fraise 🍓","Gaufre 🧇","Gaufre maison 🧇","Genoise aux amandes 🌰","Gourmandise feuilletine 🍫","Gratin de fruits 🍓","Île au caramel 🍮","Île au Grand Marnier 🍊","Île aux framboises 🍇","Île flottante au café ☕","Île flottante citronnée 🍋","Île pralinée au caramel 🌰","Île rose 🌸","Île vanillée aux fruits rouges 🍓","Île vanillée aux noisettes 🌰","Île verte 🍃","Îles flottantes 🍮","Impériale à la japonaise 🍮","Impériale au fromage 🧀","Jalousie à la frangipane 🥐","Kiwi 🥝","L'exotique 🍍","L'exquis 🍫","L'indien 🍮","L'italien 🍮","Marquise au chocolat noir 🍫","Melon 🍈","Meringue pralinée 🍮","Mille-feuille du gourmet 🍰","Miroir aux myrtilles 🫐","Moka ☕","Mousse à la noix de coco 🥥","Mousse antillaise 🍮","Mousse au café ☕","Mousse aux fraises 🍓","Mousse chantilly 🍮","Mousse chocolat à l'anglaise 🍫","Mousse coco à la pêche 🥥","Mousse de millet 🌾","Mousse de scarabée croquante 🍫","Mousse des tropiques 🍹","Mousse du chef 🍫","Mousse feu d'artifice 🎆","Mousse forêt noire 🍒","Mousse italienne 🍮","Mousse liqueur d'orange 🍊","Mousse surprise 🍫","Mousse tutti frutti 🍨","Mousse vénitienne 🍮","Mousse zébrée 🍫","Neige aux cerises 🍒","Orange 🍊","Orange confite mousse chocolat 🍫","Pamplemousse 🍊","Pamplemousse au sucre 🍊","Pamplemousse aux fruits 🍊","Parfait aux trois parfums 🍨","Paris-brest au praliné 🥨","Pêche au vin 🍑","Pêche jaune 🍑","Pêche surprise 🍑","Pêches au sirop 🍑","Petit-suisse en chemise 🥛","Planteur antillais 🍹","Poire au chocolat 🍐","Poire cuite au vin 🍷","Poire doyenne du comice 🍐","Poire et crème anglaise 🍐","Poire orangine 🍐","Poire passe-crassane 🍐","Poire pâtissière 🍐","Poire Williams 🍐","Poires au sirop 🍐","Poirier 🍐","Pomelos-orange en salade 🍊","Pomme & coulis framboise 🍎","Pomme à la Ninon 🍎","Pomme au coulis de fruit 🍎","Pomme blanche-neige 🍎","Pomme golden 🍎","Pomme Granny Smith 🍎","Pomme Jackson 🍎","Pommes macaire 🍎","Profiteroles chocolat 🍫","Prunes 🍑","Quatre-quarts aux fruits 🍰","Quenelles trois chocolats 🍫","Quetsches au sirop 🍑","Raisin blanc 🍇","Raisin noir 🍇","Riz au lait à la Condé 🍚","Riz au lait aux griottes 🍒","Roulé à la compote 🍰","Roulé à la confiture 🍰","Sablé aux amandes 🌰","Salade Acapulco 🍹","Salade de banane Sofia 🍌","Salade de fruits à la menthe 🍓","Salade de fruits au vin muscat 🍇","Salade de fruits d'été 🍓","Salade de fruits jaunes 🍑","Salade pommes et kiwis 🍎","Salade pommes et pruneaux 🍎","Samba du carnaval 🎭","Semoule aux fruits 🌾","Soupe de fruits rouges 🍓","Surprise au chocolat 🍫","Tarte à l'ananas 🍍","Tarte aux fruits de la forêt 🍓","Tarte aux prunes 🍑","Tarte chocopoire 🍐","Tarte des monts Dore 🍎","Tarte pâtissière 🍰","Tartelette à la lombarde 🍰","Tartelette à l'ananas 🍍","Tartelette à l'orange 🍊","Tartelette ardéchoise 🍑","Tartelette au chocolat 🍫","Tartelette au citron 🍋","Tartelette aux abricots 🍑","Tartelette aux cerises 🍒","Tartelette aux fraises 🍓","Tartelette aux kiwis 🥝","Tartelette aux poires 🍐","Tartelette aux pommes 🍎","Tartelette de crème brûlée 🍮","Tutti de fruits tropical 🍹","Volcan de la jungle 🌋"
         ]
     };
+
+    // ============================================================
+    // 👇👇👇 EMPLACEMENT POUR VOTRE LISTE DE PLATS 👇👇👇
+    // ============================================================
+    // Collez votre liste de plats personnalisée ici.
+    // Remplacez les tableaux ci-dessus ou ajoutez vos plats.
+    // Exemple :
+    // platsFr.entreesChaudes = ["Votre entrée 1", "Votre entrée 2"];
+    // platsFr.plats = ["Votre plat 1", "Votre plat 2"];
+    // platsFr.patisseries = ["Votre dessert 1", "Votre dessert 2"];
+    //
+    // ⬇️ COLLEZ VOTRE LISTE ICI ⬇️
+    
+    
+    
+    // ⬆️ FIN DE L'EMPLACEMENT POUR VOTRE LISTE ⬆️
+    // ============================================================
 
     // LISTES EN/ES : inchangées (à traduire plus tard)
     const platsEn = {
@@ -813,23 +867,24 @@
         document.querySelectorAll('.lang-btn').forEach(function(btn) { btn.addEventListener('click', function() { currentLang = this.dataset.lang; saveData(); translatePage(); updateLanguageButtons(); initSelects(); updatePreview(); }); });
         document.querySelectorAll('.week-btn').forEach(function(btn) { btn.addEventListener('click', function() { saveDayData(); document.querySelectorAll('.week-btn').forEach(function(b) { b.classList.remove('active'); }); this.classList.add('active'); currentWeek = parseInt(this.dataset.week); document.getElementById('current-week').textContent = currentWeek; loadDayData(currentDay); updatePreview(); }); });
         document.querySelectorAll('.generate-btn').forEach(function(btn) { btn.addEventListener('click', function() { generatePlat(this.dataset.category, parseInt(this.dataset.index)); }); });
-        var saveBtn = document.getElementById('save-btn'); if (saveBtn) saveBtn.addEventListener('click', function() { saveDayData(); saveData(); showNotification(translations[currentLang]['save'] + ' avec succès!'); });
-        var genDayBtn = document.getElementById('generate-day-btn'); if (genDayBtn) genDayBtn.addEventListener('click', function() { generateDay(); });
-        var genWeekBtn = document.getElementById('generate-week-btn'); if (genWeekBtn) genWeekBtn.addEventListener('click', function() { generateWeek(); });
+        var saveBtn = document.getElementById('save-btn'); if (saveBtn) saveBtn.addEventListener('click', function() { mpTrack('menupro_save'); saveDayData(); saveData(); showNotification(translations[currentLang]['save'] + ' avec succès!'); });
+        var genDayBtn = document.getElementById('generate-day-btn'); if (genDayBtn) genDayBtn.addEventListener('click', function() { mpTrack('menupro_generate_day'); generateDay(); });
+        var genWeekBtn = document.getElementById('generate-week-btn'); if (genWeekBtn) genWeekBtn.addEventListener('click', function() { mpTrack('menupro_generate_week'); generateWeek(); });
         var toggleBtn = document.getElementById('toggle-view-btn'); if (toggleBtn) toggleBtn.addEventListener('click', function() { isTableView = !isTableView; updatePreview(); this.textContent = isTableView ? 'Vue normale' : translations[currentLang]['table_preview']; });
         var resetBtn = document.getElementById('reset-btn'); if (resetBtn) resetBtn.addEventListener('click', function() { resetAll(); });
-        var manageBtn = document.getElementById('manage-plats-btn'); if (manageBtn) manageBtn.addEventListener('click', function() { showModal('manage-plats-modal'); updatePlatList(); });
-        var configBtn = document.getElementById('config-btn'); if (configBtn) configBtn.addEventListener('click', function() { showModal('config-modal'); loadConfig(); });
+        var manageBtn = document.getElementById('manage-plats-btn'); if (manageBtn) manageBtn.addEventListener('click', function() { mpTrack('menupro_manage_dishes'); showModal('manage-plats-modal'); updatePlatList(); });
+        var configBtn = document.getElementById('config-btn'); if (configBtn) configBtn.addEventListener('click', function() { mpTrack('menupro_config'); showModal('config-modal'); loadConfig(); });
         var saveConfigBtn = document.getElementById('save-config-btn'); if (saveConfigBtn) saveConfigBtn.addEventListener('click', function() { saveConfig(); saveData(); showNotification(translations[currentLang]['save_configuration'] + ' avec succès!'); hideModal('config-modal'); });
         document.querySelectorAll('.close-btn').forEach(function(btn) { btn.addEventListener('click', function() { hideModal(this.dataset.modal); }); });
         var addPlatBtn = document.getElementById('add-plat-btn'); if (addPlatBtn) addPlatBtn.addEventListener('click', function() { addPlat(); });
         var pasteBtn = document.getElementById('paste-plats-btn'); if (pasteBtn) pasteBtn.addEventListener('click', function() { pastePlats(); });
         var catSelect = document.getElementById('plat-category-select'); if (catSelect) catSelect.addEventListener('change', function() { updatePlatList(); });
-        var exportBtn = document.getElementById('export-backup-btn'); if (exportBtn) exportBtn.addEventListener('click', exportBackup);
-        var importBtn = document.getElementById('import-backup-btn'); if (importBtn) importBtn.addEventListener('click', importBackup);
+        var exportBtn = document.getElementById('export-backup-btn'); if (exportBtn) exportBtn.addEventListener('click', function() { mpTrack('menupro_export'); exportBackup(); });
+        var importBtn = document.getElementById('import-backup-btn'); if (importBtn) importBtn.addEventListener('click', function() { mpTrack('menupro_import'); importBackup(); });
         var printBtn = document.getElementById('print-btn');
         if (printBtn) {
             printBtn.addEventListener('click', function() {
+                mpTrack('menupro_print_attempt', { licensed: isFullVersion });
                 if (this.disabled) { showNotification('🔒 Version gratuite'); return; }
                 var selector = document.getElementById('print-size-selector');
                 if (selector) { selector.classList.toggle('visible'); var confirmBtn = document.getElementById('confirm-print-btn'); if (selector.classList.contains('visible')) { confirmBtn.style.display = 'inline-block'; } else { confirmBtn.style.display = 'none'; } }
@@ -844,7 +899,6 @@
         if (printMonthEl) { printMonthEl.addEventListener('change', function() { config.printMonth = parseInt(this.value); saveData(); }); }
         var printYearEl = document.getElementById('print-year');
         if (printYearEl) { printYearEl.addEventListener('change', function() { config.printYear = parseInt(this.value); saveData(); }); }
-        // ✅ NOUVEAU : bouton de nettoyage d'urgence
         var clearBtn = document.getElementById('clear-storage-btn');
         if (clearBtn) {
             clearBtn.addEventListener('click', function() {
