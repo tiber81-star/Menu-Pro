@@ -44,9 +44,54 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"MenuPro","applicationCategory":"BusinessApplication","operatingSystem":"Web, Windows, macOS","description":"MenuPro génère votre menu de restaurant en 2 minutes. 100% local, sans compte.","url":"https://menupro2.com/","image":"https://menupro2.com/capture2-menu-semaine-pictogrammes.png","author":{"@type":"Person","name":"Sébastien Berthy","jobTitle":"Cuisinier"},"offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00"}}
 </script>
+
+<!-- ============================================================ -->
+<!-- BLOC PRODUCT CORRIGÉ POUR GOOGLE SEARCH CONSOLE              -->
+<!-- ============================================================ -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Product","name":"MenuPro","description":"Générateur de menus de restaurant en un clic.","offers":{"@type":"Offer","price":"79.00","priceCurrency":"EUR","availability":"https://schema.org/InStock"},"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Sébastien Berthy"},"reviewBody":"MenuPro me fait gagner des heures chaque semaine. Un clic, un menu, c'est prêt."}}
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "MenuPro",
+  "description": "Générateur de menus de restaurant en un clic. 100% local, sans compte.",
+  "image": "https://menupro2.com/capture2-menu-semaine-pictogrammes.png",
+  "sku": "MENUPRO-LICENCE-79",
+  "brand": {
+    "@type": "Brand",
+    "name": "MenuPro"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://buy.stripe.com/fZufZi4Su40q5IE11V3Je00",
+    "priceCurrency": "EUR",
+    "price": "79.00",
+    "priceValidUntil": "2027-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Sébastien Berthy"
+    },
+    "reviewBody": "MenuPro me fait gagner des heures chaque semaine. Un clic, un menu, c'est prêt."
+  }
+}
 </script>
+<!-- ============================================================ -->
+
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Pourquoi MenuPro est-il plus simple que les autres logiciels ?","acceptedAnswer":{"@type":"Answer","text":"Parce qu'il ne fait qu'une seule chose : générer vos menus. Pas de gestion de stock, pas de comptabilité, pas de planning du personnel."}},{"@type":"Question","name":"Faut-il créer un compte ou être connecté à internet ?","acceptedAnswer":{"@type":"Answer","text":"Non. MenuPro fonctionne 100% en local. Aucun compte, aucun mot de passe, aucune connexion internet requise."}},{"@type":"Question","name":"Que signifient les pictogrammes ?","acceptedAnswer":{"@type":"Answer","text":"MenuPro associe à chaque plat un pictogramme : porc, poulet, poisson, bœuf, légume, dessert."}},{"@type":"Question","name":"Pourquoi l'impression est-elle bloquée en version gratuite ?","acceptedAnswer":{"@type":"Answer","text":"Le menu imprimé est le document central de votre cuisine. La licence à 79 € débloque l'impression et l'export définitivement."}}]}
 </script>
