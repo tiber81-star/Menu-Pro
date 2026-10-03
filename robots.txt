@@ -1,11 +1,11 @@
 User-agent: *
 Allow: /
 
-# Bloquer l'application de génération de menus (page de travail)
+# Bloquer l'application de génération de menus (outil privé, réservé aux clients)
 Disallow: /MenuPro.html
 Disallow: /MenuPro
 
-# Bloquer les paramètres inutiles (évite indexation dupliquée)
+# Bloquer les paramètres inutiles (évite l'indexation dupliquée)
 Disallow: /*?utm_
 Disallow: /*?ref=
 Disallow: /*?fbclid=
